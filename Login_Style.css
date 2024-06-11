@@ -18,8 +18,12 @@ body {
 }
 .banner {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   width: 100%;
+}
+.Sena_logo {
+  width: 50px;
+  margin: 10px 50px;
 }
 .banner_news {
   text-decoration: none;
@@ -41,16 +45,20 @@ body {
   flex-direction: column;
   background-color: aliceblue;
   border-radius: 8px;
-  gap: 150px;
+  gap: 50px;
   width: 80%;
-  height: 80%;
+  height: auto;
   align-content: center;
   justify-content: center;
+}
+.Menu_title {
+  margin-top: 10px;
 }
 .Menu_login_form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-bottom: 10px;
 }
 .Menu_form--docselect {
   border-radius: 4px;
