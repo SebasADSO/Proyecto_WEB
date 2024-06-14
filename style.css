@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+.banner {
+  background-color: #00304D;
+  width: 100%;
+  height: auto;
+}
+.logo_sena {
+  width: 100px;
+  height: 70px;
+  margin: 10px;
+}

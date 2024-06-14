@@ -3,6 +3,7 @@
   --bg--text--color--white: #fff;
   --bg--text--color--black: #000;
   --bg--input--color: #E6F8E0;
+  --padding: 10px;
 }
 * {
   margin: 0 auto;
@@ -25,8 +26,9 @@ body {
   width: 50px;
   margin: 10px 50px;
 }
-.banner_news {
+.btn {
   text-decoration: none;
+  text-align: center;
   margin: 10px 50px;
   padding: 10px;
   color: var(--bg--text--color--white);
@@ -43,7 +45,7 @@ body {
   display: flex;
   text-align: center;
   flex-direction: column;
-  background-color: aliceblue;
+  background-color: #002f4d20;
   border-radius: 8px;
   gap: 50px;
   width: 80%;
@@ -80,4 +82,21 @@ body {
   border-radius: 8px;
   background-color: var(--bg--buttom--color);
   color: var(--bg--text--color--white);
+}
+.Menu_option {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Menu_register {
+  margin: 0 0 20px;
+}
+.Menu_recover {
+  margin: 0 0 20px;
+}
+.fa-home {
+  font-size: 28px;
+  margin: 5px;
 }
