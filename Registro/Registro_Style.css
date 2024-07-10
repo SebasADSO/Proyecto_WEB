@@ -1,0 +1,21 @@
+@import url(/Proyecto_WEB/Css_base/root.css);
+@import url(/Proyecto_WEB/Css_base/Componentes_01.css);
+
+  .Menu_registro {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: #002f4d20;
+    border-radius: 8px;
+    gap: 50px;
+    width: 80%;
+    height: auto;
+    align-content: center;
+    justify-content: center;
+  }
+  .Menu_form--label {
+    background-color: #000;
+  }
+.Menu_registro--title {
+  margin-top: 10px;
+}

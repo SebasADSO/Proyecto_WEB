@@ -1,61 +1,6 @@
-:root {
-  --bg--buttom--color: #50B136;
-  --bg--text--color--white: #fff;
-  --bg--text--color--black: #000;
-  --bg--input--color: #E6F8E0;
-  --padding: 10px;
-}
-* {
-  margin: 0 auto;
-  font-family: sans-serif;
-}
-html {
-  width: 100%;
-  height: 100%;
-}
-body {
-  width: 100%;
-  height: 100%;
-}
-.banner {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.Sena_logo {
-  width: 50px;
-  margin: 10px 50px;
-}
-.btn {
-  text-decoration: none;
-  text-align: center;
-  margin: 10px 50px;
-  padding: 10px;
-  color: var(--bg--text--color--white);
-  background-color: var(--bg--buttom--color);
-  border-radius: 8px;
-}
-.Menu {
-  display: flex;
-  height: 90%;
-  flex-direction: column;
-  justify-items: center;
-}
-.Menu_login {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  background-color: #002f4d20;
-  border-radius: 8px;
-  gap: 50px;
-  width: 80%;
-  height: auto;
-  align-content: center;
-  justify-content: center;
-}
-.Menu_title {
-  margin-top: 10px;
-}
+@import url(/Proyecto_WEB/Css_base/root.css);
+@import url(/Proyecto_WEB/Css_base/Componentes_01.css);
+
 .Menu_login_form {
   display: flex;
   flex-direction: column;
@@ -96,7 +41,8 @@ body {
 .Menu_recover {
   margin: 0 0 20px;
 }
-.fa-home {
-  font-size: 28px;
-  margin: 5px;
+@media ( max-width: 767px) {
+  .Menu_option {
+    flex-direction: column;
+  }
 }

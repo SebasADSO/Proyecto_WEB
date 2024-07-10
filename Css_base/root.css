@@ -1,0 +1,9 @@
+:root {
+    --bg--buttom--color: #50B136;
+    --bg--text--color--white: #fff;
+    --bg--text--color--black: #000;
+    --bg--input--color: #E6F8E0;
+    --bg--container--color: #002f4d20;
+    --bg--container--color--transparent: #002f4d0a;
+    --padding: 10px;
+  }
