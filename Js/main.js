@@ -1,18 +1,22 @@
-import { letras, email, documento, Constraseña } from "./module.js";
+import { letras, email, documento, Constraseña } from "./module_user.js";
+import { Nombre, cod, date } from "./module_rol.js"
 import { postData } from "./module_postdata.js";
+import { buscar } from "./doc_tipo.js";
+
+buscar()
 
 let r = 0
 let y = 0;
 let x = 0;
 let p = true;
 
-const regex_num = /[0-9]/;
 let regex_nom = /^[a-zA-Z ]+$/;
-const regex_tel = /^[0-9]+$/;
+const regex_num = /^[0-9]+$/;
 const regex_doc = /^[0-9]+$/;
 const regex_dire = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;;
 const regex_email = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
 
+/// --------------------------------Información del usuario---------------------------------------------- ///
 let $nombre = document.getElementById('nombre');
 let $apellido = document.getElementById('apellido');
 let $tipo_doc = document.getElementById('tipo_doc');
@@ -20,20 +24,16 @@ let $documento = document.getElementById('documento');
 let $email = document.getElementById('email');
 let $privacidad = document.getElementById('privacidad');
 let $Constraseña = document.getElementById('Constraseña');
-// const $ggg = document.getElementById('buscar_borrar');
-
 const $button = document.getElementById('siguiente')
-// const $buscar_btn = document.getElementById('buscar_btn')
-// const $btn_borrar = document.getElementById('buscar_btn_borrar');
-// const $rtt = document.getElementById('lista')
-// const update = document.getElementById('update')
 
 $nombre.addEventListener("blur", () => {
   letras($nombre);
 })
+
 $apellido.addEventListener("blur", () => {
   letras($apellido);
 })
+
 $documento.addEventListener("blur", () => {
   documento($documento)
 })
@@ -41,51 +41,10 @@ $documento.addEventListener("blur", () => {
 $email.addEventListener("blur", () => {
   email($email)
 })
+
 $Constraseña.addEventListener("blur", () => {
   Constraseña($Constraseña)
 })
-
-// $buscar.addEventListener("keydown", () => {
-//   documento($buscar)
-//   if (documento($buscar)) {
-//     $buscar_btn.removeAttribute("disabled", "")
-//   } else if (!documento($buscar)) {
-//     $buscar_btn.setAttribute("disabled", "")
-//   }
-//   $buscar_btn.addEventListener("click", (event) => {
-//     event.preventDefault();
-//     buscar($buscar)
-//   })
-// })
-// $ggg.addEventListener("keydown", () => {
-//   documento($ggg)
-//   if (documento($ggg)) {
-//     $btn_borrar.removeAttribute("disabled", "")
-//   } else if (!documento($ggg)) {
-//     $btn_borrar.setAttribute("disabled", "")
-//   }
-//   $btn_borrar.addEventListener("click", (event) => {
-//     event.preventDefault();
-//     Delete($ggg)
-//   })
-// })
-
-// $rtt.addEventListener("click", (event) => {
-//   update.removeAttribute("disabled", "")
-//   $rtt.setAttribute("disabled", "")
-//   listar(p)
-//   p = false
-//   event.preventDefault();
-//   update.addEventListener("click", (event)=> {
-//     const tabla = document.querySelectorAll('.HELLO')
-//     for (let index = 0; index <= tabla.length - 1; index++) {
-//       tabla[index].remove()
-//     }
-//     p = true
-//     listar(p)
-//     event.preventDefault()
-//   })
-// })
 
 $privacidad.addEventListener("change", () => {
   if ($privacidad.checked == true) {
@@ -126,4 +85,42 @@ $privacidad.addEventListener("change", () => {
   else {
     $button.setAttribute("disabled", "");
   }
+})
+
+///--------------------------------Información del rol -------------------------------///
+
+let $cod_program = document.getElementById('cod_program');
+let $cod_ficha = document.getElementById('cod_ficha');
+let $name_program = document.getElementById('name_program');
+let $start_lect = document.getElementById('start_lect');
+let $end_lect = document.getElementById('end_lect');
+let $product = document.getElementById('product');
+let $jornada = document.getElementById('jornada');
+
+$cod_program.addEventListener("blur", () => {
+  cod($cod_program)
+})
+
+$cod_ficha.addEventListener("blur", () => {
+  cod($cod_ficha)
+})
+
+$name_program.addEventListener("blur", () => {
+  Nombre($name_program)
+})
+
+$start_lect.addEventListener("blur", () => {
+  date($start_lect)
+})
+
+$end_lect.addEventListener("blur", () => {
+  date($end_lect)
+})
+
+$product.addEventListener("blur", () => {
+  date($product)
+})
+
+$jornada.addEventListener("blur", () => {
+  Nombre($jornada )
 })

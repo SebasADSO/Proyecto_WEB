@@ -10,11 +10,29 @@
     },
     {
       "id": 2,
-      "Tipo": "PEP"
+      "Tipo": "Pasaporte"
     },
     {
       "id": 3,
       "Tipo": "Cedula de Extranjeria"
+    },
+    {
+      "id": 4,
+      "Tipo": "Permiso Procteción Temporal"
+    }
+  ],
+  "roles": [
+    {
+      "id":1,
+      "rol": "Aprendiz"
+    },
+    {
+      "id":2,
+      "rol": "Funcionario"
+    },
+    {
+      "id":3,
+      "rol": "Instructor"
     }
   ],
   "users": [
@@ -23,21 +41,23 @@
     },
     {
       "id": "7953",
-      "nombre": "wqewqe",
-      "apellido": "qweqwewq",
+      "nombre": "Sena",
+      "apellido": "Aprendiz",
       "constraseña": "asd123ASD@@",
       "tipo_de_docemento": "Cedula de Ciudadania",
       "documento": "21312312",
-      "email": "test@gmail.com"
+      "email": "test@gmail.com",
+      "rol": "Aprendiz"
     },
     {
       "id": "c643",
-      "nombre": "ewqeqwe",
-      "apellido": "wqeqwe",
-      "constraseña": "eqweqw",
+      "nombre": "Test",
+      "apellido": "User",
+      "constraseña": "asd123ASD@@",
       "tipo_de_docemento": "Cedula de Ciudadania",
       "documento": "23132",
-      "email": "test@gmail.com"
+      "email": "test2@gmail.com",
+      "rol": "Instructor"
     }
   ]
 }

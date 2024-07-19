@@ -1,5 +1,5 @@
 export const letras = element => {
-    let regex_nom = /^[a-zA-Z ]+$/;
+    let regex_nom = /^[a-zA-ZñÑ ]+$/;
     if (regex_nom.test(element.value)) {
       element.classList.remove("e")
       element.classList.add("b")

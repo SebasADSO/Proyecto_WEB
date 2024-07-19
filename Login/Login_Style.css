@@ -7,20 +7,6 @@
   gap: 20px;
   margin-bottom: 10px;
 }
-.Menu_form--docselect {
-  border-radius: 4px;
-  background-color: var(--bg--input--color);
-  border: none;
-  padding: 15px;
-  text-align: center;
-}
-.Menu_form--data {
-  background: var(--bg--input--color);
-  border: none;
-  padding: 15px;
-  border-radius: 4px;
-  text-align: center;
-}
 .Menu_buttom {
   border: none;
   padding: 25px;

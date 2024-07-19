@@ -14,38 +14,126 @@
         </figure>
         <a class="btn banner_news" href="../index.html" id="news"><i class="fa fa-home" aria-hidden="true"></i>INICIO</a>
       </header>
-      <main class="Manu">
-        <section class="Menu_registro">
-            <h2 class="Menu_registro--title">Registro Información personal del usuario</h2>
-              <form class="Menu_form" id="formulario" style="display: flex; flex-direction: column; margin: 10px; gap: 10px;" method="post">
-                <label>Nombre:<br>
-                    <input type="text" id="nombre">
-                </label>
-                <label>Apellido:<br>
-                  <input type="text" id="apellido">
-                </label>
-                <label>Tipo de documento:<br>
-                <select id="tipo_doc">
-                  <option value="Cedula de Ciudadania">Cedula de Ciudadania</option>
-                  <option value="Tarjeta de identidad">Tarjeta de identidad</option>
-                </select>
-                </label>
-                <label>N° de Documento:<br>
-                  <input type="text" id="documento">
-                </label>
-                <label>Email:<br>
-                  <input type="text" id="email">
-                </label>
-                <label>Constraseña:<br>
-                  <input type="password" id="Constraseña">
-                </label>
+      <main class="Menu">
+          <form class="Menu_form--all" method="post">
+            <section class="Menu_registro">
+              <h2 class="Menu_registro--title">Registro Información personal del usuario</h2>
+                <article class="Menu_form" id="formulario">
+                  <label for="nombre">Nombre:
+                    <input placeholder="Nombre" class="Menu_form--data nombre" type="text" id="nombre">
+                  </label>
+                  <label for="apellido">Apellido:
+                    <input placeholder="Apellido" class="Menu_form--data apellido" type="text" id="apellido">
+                  </label>
+                  <label for="tipo_doc">Tipo de documento:
+                    <select class="Menu_form--docselect tipo_doc" id="tipo_doc">
+                    </select>
+                  </label>
+                  <label for="documento">N° de documento:
+                    <input placeholder="N° documento" class="Menu_form--data documento" type="text" id="documento">
+                  </label>
+                  <label for="email">Email:
+                    <input placeholder="Email" class="Menu_form--data email" type="text" id="email">
+                  </label>
+                  <label for="contraseña">Contraseña:
+                    <input placeholder="Contraseña" class="Menu_form--data contraseña" type="password" id="Constraseña">
+                  </label>
+                  <label for="contraseña">Confirmar Contraseña:
+                    <input placeholder="Contraseña" class="Menu_form--data contraseña" type="password" id="re_Constraseña">
+                  </label>
+                </article>     
+              </section>
+              <section class="Menu_registro">
+                <h2 class="Menu_registro--title">Registro Información del programa del aprendiz</h2>
+                <article class="Menu_form" id="formulario">
+                  <label for="cod_programa">Codigo del programa:
+                    <input placeholder="Codigo del programa" class="Menu_form--data cod_programa" type="text" id="cod_program">
+                  </label>
+                  <label for="cod_ficha">Codigo de ficha:
+                    <input placeholder="Codigo de ficha" class="Menu_form--data cod_ficha" type="text" id="cod_ficha">
+                  </label>
+                  <label for="name_program">Nombre del programa:
+                    <input placeholder="Nombre del programa" class="Menu_form--data name_program" type="text" id="name_program">
+                  </label>
+                  <label for="start_lect">Fecha inicio lectiva:
+                    <input placeholder="Fecha inicio lectiva" class="Menu_form--data start_lect" type="date" id="start_lect">
+                  </label>
+                  <label for="end_lect">Fecha final lectiva:
+                    <input placeholder="Fecha final lectiva" class="Menu_form--data end_lect" type="date" id="end_lect">
+                  </label>
+                  <label for="product">Fecha productiva:
+                    <input placeholder="Fecha productiva" class="Menu_form--data product" type="date" id="product">
+                  </label>
+                  <label for="jornada">Jornada<br>
+                    <select class="Menu_form--docselect jornada" id="jornada">
+                      <option value="Mañana">Mañana</option>
+                      <option value="Tarde">Tarde</option>
+                      <option value="Diurna">Diurna</option>
+                      <option value="Noche">Noche</option>
+                    </select>
+                  </label>
+                </article> 
+              </section>
+              <section class="Menu_registro condiciones">
+                <h2 class="Menu_registro--title">Registro Información condiciones del usuario</h2>
+                <article class="Menu_form" id="formulario">
+                  <h3 class="Menu_form--title">Condicion
+                    <select class="Menu_form--docselect condicion" id="Condicion_1">
+                      <option value="">Ninguna</option>
+                    </select>
+                  </h3>
+                  <h3 class="Menu_form--title">Condicion
+                    <select class="Menu_form--docselect condicion" id="Condicion_2">
+                      <option value="">Ninguna</option>
+                    </select>
+                  </h3>
+                  <h3 class="Menu_form--title">Condicion
+                    <select class="Menu_form--docselect condicion" id="Condicion_3">
+                      <option value="">Ninguna</option>
+                    </select>
+                  </h3>
+                  <h3 class="Menu_form--title">Condicion
+                    <select class="Menu_form--docselect condicion" id="Condicion_4">
+                      <option value="">Ninguna</option>
+                    </select>
+                  </h3>
+                  <h3 class="Menu_form--title">Condicion
+                    <select class="Menu_form--docselect condicion" id="Condicion_5">
+                      <option value="">Ninguna</option>
+                    </select>
+                  </h3>
+                  <h3 class="Menu_form--title">Condicion
+                    <select class="Menu_form--docselect condicion" id="Condicion_6">
+                      <option value="">Ninguna</option>
+                    </select>
+                  </h3>
+                  <h3 class="Menu_form--title">Condicion
+                    <select class="Menu_form--docselect condicion" id="Condicion_7">
+                      <option value="">Ninguna</option>
+                    </select>
+                  </h3><h3 class="Menu_form--title">Condicion
+                    <select class="Menu_form--docselect condicion" id="Condicion_8">
+                      <option value="">Ninguna</option>
+                    </select>
+                  </h3><h3 class="Menu_form--title">Condicion
+                    <select class="Menu_form--docselect condicion" id="Condicion_9">
+                      <option value="">Ninguna</option>
+                    </select>
+                  </h3>
+                  <h3 class="Menu_form--title">Condicion
+                    <select class="Menu_form--docselect condicion" id="Condicion_10">
+                      <option value="">Ninguna</option>
+                    </select>
+                  </h3>
+                </article>
+              </section>
+              <section class="Menu_form--post">
                 <label>
-                  <input type="checkbox" id="privacidad"> A registrarse usted acepta los <a href="#" style="text-decoration: none;">Terminos y condiciones</a> y nuestra <a href="#" style="text-decoration: none;">Politica de privacidad</a>
+                  <input class="Menu_form_terms" type="checkbox" id="privacidad">A registrarse usted acepta los <a href="#" style="text-decoration: none;">Terminos y condiciones</a> y nuestra <a href="#" style="text-decoration: none;">Politica de privacidad</a>
                 </label>
-                <button type="submit" id="siguiente" style="padding: 10px; align-self: center;" disabled>SIGUIENTE</button>
-                  </form>
-                </fieldset>
-            </form>
+                <button type="submit" id="siguiente" class="button_registrar" disabled>SIGUIENTE</button>
+              </section>
+          </form>
         </section>
         <script src="/Js/main.js" type="module"></script>
       </main>
