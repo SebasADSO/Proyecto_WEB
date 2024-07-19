@@ -1,5 +1,5 @@
-@import url(/Proyecto_WEB/Css_base/root.css);
-@import url(/Proyecto_WEB/Css_base/Componentes_01.css);
+@import url(../Css_base/root.css);
+@import url(../Css_base/Componentes_01.css);
 
 .Menu_login_form {
   display: flex;

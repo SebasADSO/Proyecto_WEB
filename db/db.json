@@ -1,0 +1,43 @@
+{
+  "documentos": [
+    {
+      "id": 0,
+      "Tipo": "Cedula de Ciudadania"
+    },
+    {
+      "id": 1,
+      "Tipo": "Tarjeta de Indentidad"
+    },
+    {
+      "id": 2,
+      "Tipo": "PEP"
+    },
+    {
+      "id": 3,
+      "Tipo": "Cedula de Extranjeria"
+    }
+  ],
+  "users": [
+    {
+      "id": 1
+    },
+    {
+      "id": "7953",
+      "nombre": "wqewqe",
+      "apellido": "qweqwewq",
+      "constraseña": "asd123ASD@@",
+      "tipo_de_docemento": "Cedula de Ciudadania",
+      "documento": "21312312",
+      "email": "test@gmail.com"
+    },
+    {
+      "id": "c643",
+      "nombre": "ewqeqwe",
+      "apellido": "wqeqwe",
+      "constraseña": "eqweqw",
+      "tipo_de_docemento": "Cedula de Ciudadania",
+      "documento": "23132",
+      "email": "test@gmail.com"
+    }
+  ]
+}

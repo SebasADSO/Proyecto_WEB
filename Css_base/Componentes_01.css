@@ -1,4 +1,4 @@
-@import url(/Proyecto_WEB/Css_base/root.css);
+@import url(../Css_base/root.css);
 * {
     margin: 0 auto;
     font-family: sans-serif;
@@ -63,3 +63,14 @@
         display: none;
     }
   }
+/* Landing */
+.landing__page {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: gainsboro;
+  width: 100%;
+  border-radius: 8px;
+  gap: 30px;
+}

@@ -10,19 +10,44 @@
 <body>
     <header class="banner">
         <figure class="Sena_logo" >
-          <img src="/Proyecto_WEB/SVG/logo-sena-verde-complementario-svg-2022.svg">
+          <img src="../SVG/logo-sena-verde-complementario-svg-2022.svg">
         </figure>
-        <a class="btn banner_news" href="/Proyecto_WEB/" id="news"><i class="fa fa-home" aria-hidden="true"></i>INICIO</a>
+        <a class="btn banner_news" href="../index.html" id="news"><i class="fa fa-home" aria-hidden="true"></i>INICIO</a>
       </header>
       <main class="Manu">
         <section class="Menu_registro">
             <h2 class="Menu_registro--title">Registro Información personal del usuario</h2>
-            <form class="Menu_form">
-                <label class="Menu_form--label">
-                    <input class="">
+              <form class="Menu_form" id="formulario" style="display: flex; flex-direction: column; margin: 10px; gap: 10px;" method="post">
+                <label>Nombre:<br>
+                    <input type="text" id="nombre">
                 </label>
+                <label>Apellido:<br>
+                  <input type="text" id="apellido">
+                </label>
+                <label>Tipo de documento:<br>
+                <select id="tipo_doc">
+                  <option value="Cedula de Ciudadania">Cedula de Ciudadania</option>
+                  <option value="Tarjeta de identidad">Tarjeta de identidad</option>
+                </select>
+                </label>
+                <label>N° de Documento:<br>
+                  <input type="text" id="documento">
+                </label>
+                <label>Email:<br>
+                  <input type="text" id="email">
+                </label>
+                <label>Constraseña:<br>
+                  <input type="password" id="Constraseña">
+                </label>
+                <label>
+                  <input type="checkbox" id="privacidad"> A registrarse usted acepta los <a href="#" style="text-decoration: none;">Terminos y condiciones</a> y nuestra <a href="#" style="text-decoration: none;">Politica de privacidad</a>
+                </label>
+                <button type="submit" id="siguiente" style="padding: 10px; align-self: center;" disabled>SIGUIENTE</button>
+                  </form>
+                </fieldset>
             </form>
         </section>
+        <script src="/Js/main.js" type="module"></script>
       </main>
 </body>
 </html>
