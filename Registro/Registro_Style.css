@@ -24,10 +24,10 @@
   width: 100%;
   grid-template-columns: repeat(5, 15%);
   grid-template-rows: 70px;
-  min-height: 250px;
+  min-height: 350px;
   justify-content: center;
   justify-items: start;
-  gap: 30px;
+  gap: 100px 40px;
 }
 input {
   border: 1px solid black;
@@ -80,4 +80,13 @@ label {
 }
 .Menu_form--docselect {
   margin: 10px;
+}
+#nombre_label {
+  display: flex;
+  flex-direction: column;
+}
+.span {
+  width: 200px;
+  height: 100px;
+  font-size: 14px;
 }
