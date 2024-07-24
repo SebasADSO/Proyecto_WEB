@@ -23,15 +23,15 @@
   ],
   "roles": [
     {
-      "id":1,
+      "id": 1,
       "rol": "Aprendiz"
     },
     {
-      "id":2,
+      "id": 2,
       "rol": "Funcionario"
     },
     {
-      "id":3,
+      "id": 3,
       "rol": "Instructor"
     }
   ],
@@ -40,24 +40,82 @@
       "id": 1
     },
     {
-      "id": "7953",
-      "nombre": "Sena",
-      "apellido": "Aprendiz",
+      "id": "11b3",
+      "nombre": "Aprendiz",
+      "apellido": "Sena",
       "constraseña": "asd123ASD@@",
       "tipo_de_docemento": "Cedula de Ciudadania",
-      "documento": "21312312",
+      "documento": "12312321",
       "email": "test@gmail.com",
-      "rol": "Aprendiz"
+      "rol": {
+        "nivel": "aprendiz",
+        "cod_programa": "21332112",
+        "cod_ficha": "4324234",
+        "nombre_programa": "ADSO",
+        "inicio_lectiva": "2024-07-01",
+        "final_lectiva": "2024-07-14",
+        "fecha_productiva": "2024-07-10",
+        "jornada": "Mañana"
+      },
+      "condicion": {
+        "Condicion1": "Ninguna",
+        "Condicion2": "Ninguna",
+        "Condicion3": "Ninguna",
+        "Condicion4": "Ninguna",
+        "Condicion5": "Ninguna"
+      }
     },
     {
-      "id": "c643",
-      "nombre": "Test",
-      "apellido": "User",
-      "constraseña": "asd123ASD@@",
-      "tipo_de_docemento": "Cedula de Ciudadania",
-      "documento": "23132",
-      "email": "test2@gmail.com",
-      "rol": "Instructor"
+      "id": "00ea",
+      "nombre": "Fernando",
+      "apellido": "Sayas",
+      "constraseña": "TeamoYesid123@",
+      "tipo_de_docemento": "Cedula de Extranjeria",
+      "documento": "123456789",
+      "email": "gomez@gmail.com",
+      "rol": {
+        "nivel": "aprendiz",
+        "cod_programa": "12345",
+        "cod_ficha": "2673126",
+        "nombre_programa": "ADSO",
+        "inicio_lectiva": "2024-07-24",
+        "final_lectiva": "2024-07-24",
+        "fecha_productiva": "2024-07-24",
+        "jornada": "Mañana"
+      },
+      "condicion": {
+        "Condicion1": "Ninguna",
+        "Condicion2": "Ninguna",
+        "Condicion3": "Ninguna",
+        "Condicion4": "Ninguna",
+        "Condicion5": "Ninguna"
+      }
+    },
+    {
+      "id": "b1dc",
+      "nombre": "Fernando",
+      "apellido": "Sayas",
+      "constraseña": "TeamoYesid123@",
+      "tipo_de_docemento": "Cedula de Extranjeria",
+      "documento": "123456789",
+      "email": "gomez@gmail.com",
+      "rol": {
+        "nivel": "aprendiz",
+        "cod_programa": "12345",
+        "cod_ficha": "2673126",
+        "nombre_programa": "ADSO",
+        "inicio_lectiva": "2024-07-24",
+        "final_lectiva": "2024-07-24",
+        "fecha_productiva": "2024-07-24",
+        "jornada": "Mañana"
+      },
+      "condicion": {
+        "Condicion1": "Ninguna",
+        "Condicion2": "Ninguna",
+        "Condicion3": "Ninguna",
+        "Condicion4": "Ninguna",
+        "Condicion5": "Ninguna"
+      }
     }
   ]
 }
