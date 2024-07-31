@@ -14,3 +14,37 @@ export async function buscar() {
         tipo_doc.appendChild(option)
     });
 }
+
+export async function educacion() {
+  const respuesta = await fetch("http://127.0.0.1:3000/Educacion", {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+  })
+  const datos = await respuesta.json()
+  const educacion = document.getElementById('educacion')
+  datos.forEach(element => {
+      let option = document.createElement('option')
+      option.innerHTML = element.Nivel
+      option.setAttribute("value", element.Nivel)
+      educacion.appendChild(option)
+  });
+}
+
+export async function rol() {
+  const respuesta = await fetch("http://127.0.0.1:3000/roles", {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+  })
+  const datos = await respuesta.json()
+  const rol = document.getElementById('rol')
+  datos.forEach(element => {
+      let option = document.createElement('option')
+      option.innerHTML = element.rol
+      option.setAttribute("value", element.rol)
+      rol.appendChild(option)
+  });
+}

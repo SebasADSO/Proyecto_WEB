@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro A.I.R Sena</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Selección de rol en centro de formación</title>
     <link rel="stylesheet" href="Registro_Style.css">
 </head>
 <body>
@@ -14,8 +13,8 @@
         </figure>
         <a class="btn banner_news" href="../index.html" id="news"><i class="fa fa-home" aria-hidden="true"></i>INICIO</a>
       </header>
-      <main class="Menu">
-          <form class="Menu_form--all" method="post">
+    <main class="Menu">
+        <form class="Menu_form--all" method="post">
             <section class="Menu_registro">
               <h2 class="Menu_registro--title">Registro Información personal del usuario</h2>
                 <article class="Menu_form" id="formulario">
@@ -43,35 +42,38 @@
                   </label>
                 </article>     
               </section>
-              <section class="Menu_registro">
-                <h2 class="Menu_registro--title">Registro Información del programa del aprendiz</h2>
+              <section class="Menu_registro rol_container">
+                <h2 class="Menu_registro--title" id="title_rol"></h2>
                 <article class="Menu_form" id="formulario">
-                  <label for="cod_programa">Codigo del programa:
-                    <input placeholder="Codigo del programa" class="Menu_form--data cod_programa" type="text" id="cod_program" required>
-                  </label>
-                  <label for="cod_ficha">Codigo de ficha:
-                    <input placeholder="Codigo de ficha" class="Menu_form--data cod_ficha" type="text" id="cod_ficha" required>
-                  </label>
-                  <label for="name_program">Nombre del programa:
-                    <input placeholder="Nombre del programa" class="Menu_form--data name_program" type="text" id="name_program" required>
-                  </label>
-                  <label for="start_lect">Fecha inicio lectiva:
-                    <input placeholder="Fecha inicio lectiva" class="Menu_form--data start_lect" type="date" id="start_lect" required>
-                  </label>
-                  <label for="end_lect">Fecha final lectiva:
-                    <input placeholder="Fecha final lectiva" class="Menu_form--data end_lect" type="date" id="end_lect" required>
-                  </label>
-                  <label for="product">Fecha productiva:
-                    <input placeholder="Fecha productiva" class="Menu_form--data product" type="date" id="product" required>
-                  </label>
-                  <label for="jornada">Jornada<br>
-                    <select class="Menu_form--docselect jornada" id="jornada">
-                      <option value="Mañana">Mañana</option>
-                      <option value="Tarde">Tarde</option>
-                      <option value="Diurna">Diurna</option>
-                      <option value="Noche">Noche</option>
+                  <label for="rol">Rol:<br>
+                    <select class="Menu_form--docselect rol" id="rol">
                     </select>
                   </label>
+                  <label for="Nivel">Nivel de formación:
+                    <select class="Menu_form--data Nivel" id="educacion" style="margin-top: 10px;">
+                    </select>
+                  </label>
+                  <fieldset class="Menu_form--field" title="Dias">
+                    <legend>Dias</legend>
+                    <label for="lunes">Lunes
+                        <input type="checkbox" name="Lunes" id="lunes" value="Lunes" class="Menu_form--checkbox">
+                      </label>
+                    <label for="martes">Martes
+                        <input type="checkbox" name="Martes" id="martes" value="Martes" class="Menu_form--checkbox">
+                    </label>
+                    <label for="miercoles">Miercoles
+                        <input type="checkbox" name="Miercoles" id="miercoles" value="Miercoles" class="Menu_form--checkbox">
+                    </label>
+                    <label for="jueves">Jueves
+                        <input type="checkbox" name="Jueves" id="jueves" value="Jueves" class="Menu_form--checkbox">
+                    </label>
+                    <label for="viernes">Viernes
+                        <input type="checkbox" name="Viernes" id="viernes" value="Viernes" class="Menu_form--checkbox">
+                    </label>
+                    <label for="sabado">Sabado
+                        <input type="checkbox" name="Sabado" id="sabado" value="Sabado" class="Menu_form--checkbox">
+                    </label>
+                  </fieldset>
                 </article> 
               </section>
               <section class="Menu_registro condiciones">
@@ -111,7 +113,7 @@
                 <button type="submit" id="siguiente" class="button_registrar" disabled>SIGUIENTE</button>
               </section>
           </form>
-        <script src="main.js" type="module"></script>
-      </main>
+          <script type="module" src="app.js"></script>
+    </main>
 </body>
 </html>

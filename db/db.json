@@ -24,7 +24,7 @@
   "roles": [
     {
       "id": 1,
-      "rol": "Aprendiz"
+      "rol": "Ninguno"
     },
     {
       "id": 2,
@@ -33,6 +33,32 @@
     {
       "id": 3,
       "rol": "Instructor"
+    }
+  ],
+  "Educacion": [
+    {
+      "id": 0,
+      "Nivel": "Bachiller"
+    },
+    {
+      "id": 1,
+      "Nivel": "Bachiller Tecnico"
+    },
+    {
+      "id": 2,
+      "Nivel": "Tecnico"
+    },
+    {
+      "id": 3,
+      "Nivel": "Tecnologo"
+    },
+    {
+      "id": 4,
+      "Nivel": "Universitario"
+    },
+    {
+      "id": 5,
+      "Nivel": "Doctorado"
     }
   ],
   "users": [
@@ -108,6 +134,185 @@
         "final_lectiva": "2024-07-24",
         "fecha_productiva": "2024-07-24",
         "jornada": "Mañana"
+      },
+      "condicion": {
+        "Condicion1": "Ninguna",
+        "Condicion2": "Ninguna",
+        "Condicion3": "Ninguna",
+        "Condicion4": "Ninguna",
+        "Condicion5": "Ninguna"
+      }
+    },
+    {
+      "id": "1020",
+      "nombre": "SSSS",
+      "apellido": "SSSSSSS",
+      "constraseña": "Sen@1234",
+      "tipo_de_docemento": "Pasaporte",
+      "documento": "3123213",
+      "email": "test@gamil.com",
+      "rol": {
+        "nivel": "",
+        "rol": "Funcionario",
+        "educacion": "Universitario"
+      },
+      "condicion": {
+        "Condicion1": "Ninguna",
+        "Condicion2": "Ninguna",
+        "Condicion3": "Ninguna",
+        "Condicion4": "Ninguna",
+        "Condicion5": "Ninguna"
+      }
+    },
+    {
+      "id": "e1fc",
+      "nombre": "eqweq",
+      "apellido": "eqweqweq",
+      "constraseña": "Sen@1234",
+      "tipo_de_docemento": "Cedula de Ciudadania",
+      "documento": "43413413",
+      "email": "test@gmail.com",
+      "rol": {
+        "nivel": "",
+        "rol": "Instructor",
+        "educacion": "Bachiller",
+        "dias": ""
+      },
+      "condicion": {
+        "Condicion1": "Ninguna",
+        "Condicion2": "Ninguna",
+        "Condicion3": "Ninguna",
+        "Condicion4": "Ninguna",
+        "Condicion5": "Ninguna"
+      }
+    },
+    {
+      "id": "8002",
+      "nombre": "wrwrwe",
+      "apellido": "rwerwerwe",
+      "constraseña": "Sen@1234",
+      "tipo_de_docemento": "Cedula de Ciudadania",
+      "documento": "423423423",
+      "email": "tets@gnmail.com",
+      "rol": {
+        "nivel": "",
+        "rol": "Instructor",
+        "educacion": "Tecnico",
+        "dias": ""
+      },
+      "condicion": {
+        "Condicion1": "Ninguna",
+        "Condicion2": "Ninguna",
+        "Condicion3": "Ninguna",
+        "Condicion4": "Ninguna",
+        "Condicion5": "Ninguna"
+      }
+    },
+    {
+      "id": "0adb",
+      "nombre": "weqweqwe",
+      "apellido": "qweqweqwe",
+      "constraseña": "Sen@1234",
+      "tipo_de_docemento": "Cedula de Ciudadania",
+      "documento": "2414124141",
+      "email": "test@gmail.com",
+      "rol": {
+        "nivel": "",
+        "rol": "Instructor",
+        "educacion": "Tecnologo",
+        "dias": ""
+      },
+      "condicion": {
+        "Condicion1": "Ninguna",
+        "Condicion2": "Ninguna",
+        "Condicion3": "Ninguna",
+        "Condicion4": "Ninguna",
+        "Condicion5": "Ninguna"
+      }
+    },
+    {
+      "id": "dfde",
+      "nombre": "wwqeqwe",
+      "apellido": "eqweqweqw",
+      "constraseña": "Sen@1234",
+      "tipo_de_docemento": "Cedula de Ciudadania",
+      "documento": "41214124124",
+      "email": "tets@gmail.com",
+      "rol": {
+        "nivel": "",
+        "rol": "Funcionario",
+        "educacion": "Tecnologo",
+        "dias": ""
+      },
+      "condicion": {
+        "Condicion1": "Ninguna",
+        "Condicion2": "Ninguna",
+        "Condicion3": "Ninguna",
+        "Condicion4": "Ninguna",
+        "Condicion5": "Ninguna"
+      }
+    },
+    {
+      "id": "7e1f",
+      "nombre": "hjehe",
+      "apellido": "adadawd",
+      "constraseña": "Sen@1234",
+      "tipo_de_docemento": "Cedula de Ciudadania",
+      "documento": "4324242",
+      "email": "resr@gmail.com",
+      "rol": {
+        "nivel": "",
+        "rol": "Funcionario",
+        "educacion": "Tecnologo",
+        "dias": " Jueves Viernes Sabado"
+      },
+      "condicion": {
+        "Condicion1": "Ninguna",
+        "Condicion2": "Ninguna",
+        "Condicion3": "Ninguna",
+        "Condicion4": "Ninguna",
+        "Condicion5": "Ninguna"
+      }
+    },
+    {
+      "id": "f0b3",
+      "nombre": "Pepito",
+      "apellido": "Cardenas",
+      "constraseña": "Sen@1234",
+      "tipo_de_docemento": "Cedula de Ciudadania",
+      "documento": "465646794",
+      "email": "Pepito@hotmail.com",
+      "rol": {
+        "nivel": "",
+        "rol": "Funcionario",
+        "educacion": "Tecnologo",
+        "dias": "Lunes Martes Miercoles Jueves Viernes Sabado"
+      },
+      "condicion": {
+        "Condicion1": "Ninguna",
+        "Condicion2": "Ninguna",
+        "Condicion3": "Ninguna",
+        "Condicion4": "Ninguna",
+        "Condicion5": "Ninguna"
+      }
+    },
+    {
+      "id": "083d",
+      "nombre": "weqq",
+      "apellido": "eqweqe",
+      "constraseña": "Sen@1234",
+      "tipo_de_docemento": "Cedula de Ciudadania",
+      "documento": "4124124124",
+      "email": "test@gamil.com",
+      "rol": {
+        "nivel": "aprendiz",
+        "cod_programa": "42214234",
+        "cod_ficha": "14412412341",
+        "nombre_programa": "ADSO",
+        "inicio_lectiva": "2024-07-04",
+        "final_lectiva": "2024-07-07",
+        "fecha_productiva": "2024-07-06",
+        "jornada": "Diurna"
       },
       "condicion": {
         "Condicion1": "Ninguna",

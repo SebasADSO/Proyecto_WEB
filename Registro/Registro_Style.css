@@ -1,33 +1,9 @@
 @import url(../Css_base/root.css);
 @import url(../Css_base/Componentes_01.css);
 
-.Menu_registro {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  background-color: #002f4d20;
-  border-radius: 8px;
-  gap: 50px;
-  width: 80%;
-  margin-top: 30px;
-  height: auto;
-  align-content: center;
-}
-.Menu_form--label {
-  background-color: #000;
-}
-.Menu_registro--title {
-  margin-top: 10px;
-}
-.Menu_form {
-  display: grid;
+body {
   width: 100%;
-  grid-template-columns: repeat(5, 15%);
-  grid-template-rows: 70px;
-  min-height: 350px;
-  justify-content: center;
-  justify-items: start;
-  gap: 100px 40px;
+  height: 100%;
 }
 input {
   border: 1px solid black;
@@ -56,6 +32,12 @@ input {
   background-color: var(--bg--buttom--color);
   border: none;
   border-radius: 8px;
+}
+.button_registrar:hover {
+  transition: 300ms;
+  background-color: var(--bg--buttom--color--hover);
+  color: #000;
+  cursor: pointer;
 }
 .button_registrar:disabled {
   color: #8b8b8b;

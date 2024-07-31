@@ -7,20 +7,28 @@
     width: 100%;
     height: 100%;
   }
-  body {
-    width: 100%;
-    height: 100%;
-  }
 .banner {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    max-width: 100%;
   }
   .Sena_logo {
     width: 50px;
     margin: 10px 50px;
+    align-self: flex-start;
   }
   .btn {
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 50px;
+    padding: var(--padding);
+    color: var(--bg--text--color--white);
+    background-color: var(--bg--buttom--color);
+    border-radius: 8px;
+  }
+  .banner_news {
+    width: 60px;
     text-decoration: none;
     text-align: center;
     margin: 10px 50px;
@@ -54,15 +62,6 @@
     font-size: 28px;
     margin: 5px;
   }
-  @media ( max-width: 480px) {
-    .Menu_container {
-        width: 100%;
-        background-color: var(--bg--container--color--transparent);
-    }
-    .fa-home {
-        display: none;
-    }
-  }
 /* Landing */
 .landing__page {
   margin-top: 10px;
@@ -74,6 +73,10 @@
   border-radius: 8px;
   gap: 30px;
 }
+
+
+
+
 .Menu_form--data {
   background: var(--bg--input--color);
   border: none;
@@ -86,4 +89,88 @@
   background-color: var(--bg--input--color);
   border: none;
   padding: 15px;
+}
+.Menu_form--checkbox {
+  border: 1px solid #000;
+  color: var(--bg--input--color);
+  width: 15px;
+  height: 15px;
+}
+.Menu_form--field {
+  display: grid;
+  background-color: var(--bg--input--color);
+  grid-template-columns: repeat(3, 150px);
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  text-decoration: underline;
+  height: 25vh;
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+.Menu_registro {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: #e1f4ffe5;
+  border-radius: 8px;
+  gap: 50px;
+  width: 100%;
+  margin-top: 30px;
+  height: auto;
+  align-content: center;
+}
+.Menu_form--all {
+  width: 80%;
+  height: 100%;
+}
+.Menu_registro--title {
+  margin-top: 10px;
+}
+.Menu_form--label {
+  background-color: #000;
+}
+.Menu_form {
+  display: grid;
+  min-width: 300px;
+  max-width: 100%;
+  grid-template-columns: repeat(5, 200px);
+  grid-template-rows: 70px;
+  min-height: 350px;
+  justify-content: center;
+  justify-items: start;
+  gap: 100px 40px;
+  padding: 10px;
+}
+@media ( max-width: 480px) {
+  html {
+    width: 100%;
+    height: 100%;
+  }
+  .Menu {
+    max-width: 100%;
+  }
+  .Menu_container {
+      width: 100%;
+      background-color: var(--bg--container--color--transparent);
+  }
+  .fa-home {
+      display: none;
+  }
+  .Menu_form--all {
+    width: 100%;
+  }
+  .Menu_form {
+    width: 100%;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: 70px;
+    padding: 0;
+  }
+  .Menu_form--data {
+    width: 100px;
+  }
+  .Menu_form--field {
+    grid-template-columns: repeat(2, 150px);
+    width: 150px;
+  }
 }
