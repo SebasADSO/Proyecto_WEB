@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIR Sena</title>
+    <link rel="stylesheet" href="Registro_Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="banner">
+        <figure class="Sena_logo" >
+          <img src="../SVG/logo-sena-verde-complementario-svg-2022.svg">
+        </figure>
+        <a class="btn banner_news" href="../index.html" id="news"><i class="fa fa-home" aria-hidden="true"></i>INICIO</a>
+      </header>
+    <main class="Menu">
+        <section class="Menu_registro">
+            <h2 class="Menu_registro--title">Usuario registrado correctamente en el sistema</h2>
+            <figure class="Menu_correct">
+                <img class="Menu_correct--img" src="../SVG/9135401.png" alt="Correct...">
+            </figure>
+            <span>Imagen de <a href="https://www.freepik.es/psd-gratis/simbolo-verificacion-aislado_44989288.htm#query=check&position=11&from_view=keyword&track=sph&uuid=1cc4387c-2a8a-48aa-8a07-0066eb214577">Freepik</a></span>
+            <p>En 5 segundos sera enviado a la pagina de login de forma automatica</p>
+            <a href="../Login/Login.html" class="button_registrar">Volver al Menu de Login</a>
+        </section>
+    </main>
+    <script>
+        setTimeout(() => {
+            location.href = "../Login/Login.html"
+        }, 5000);
+    </script>
+</body>
+</html>

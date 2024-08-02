@@ -40,37 +40,37 @@ export const letras = element => {
   /// La contraseña debe tener minimo 8 y un maximo de 15 caracteres, en los cuales debe incluir una minuscula, mayuscula, un numero y un caracter especial ($@$!%*?&)
   export const Constraseña = element => {
     const $base = document.getElementById('contra_label')
-    const $span = document.createElement('div')
+    const $span = document.createElement('span')
     const regex_dire = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;
     if (!regex_dire.test(element.value) || element.value.trim().length == 0) {
-      if ($base.children.length == 2) {
+      if ($base.children.length == 3) {
         element.classList.remove("b")
         element.classList.add("e")
-        $span.classList ='span'
-        $span.innerHTML = "La contraseña debe tener minimo 8 y un maximo de 15 caracteres, en los cuales debe incluir una minuscula, mayuscula, un numero y un caracter especial ($@$!%*?&)"
-        $base.appendChild($span)
-        $base.lastChild.remove()
         return false
       } else {
         element.classList.remove("b")
         element.classList.add("e")
         $span.classList ='span'
+        $span.setAttribute("id", "wrong")
         $span.innerHTML = "La contraseña debe tener minimo 8 y un maximo de 15 caracteres, en los cuales debe incluir una minuscula, mayuscula, un numero y un caracter especial ($@$!%*?&)"
-        $base.appendChild($span)
+        $base.insertBefore($span, $base.children[2])
         return false
       }
     }
     else if (regex_dire.test(element.value) && element.value.trim().length > 0) {
-        
-        if ($base.children.length == 1) {
-          element.classList.remove("e")
-          element.classList.add("b")
-          return true
-        } else {
-          $base.lastChild.remove()
-          return true
-        }
-      }  
+      if ($base.children.length == 3) {
+        let remove = document.getElementById('wrong')
+        remove.remove()
+        element.classList.remove("e")
+        element.classList.add("b")
+        return true
+      }
+      else {
+        element.classList.remove("e")
+        element.classList.add("b")
+        return true
+      }   
+    }
   }
 
   export const email = element => {

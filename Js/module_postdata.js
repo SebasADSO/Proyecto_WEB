@@ -34,8 +34,6 @@ export async function postData(nivel ,name, last, contra, tipo, doc, email, cod_
     },
   })
   const datos0 = await respuesta0.json()
-  console.log(datos0)
-  console.log(data)
   if (datos0.length == 1) {
     const response = await fetch("http://127.0.0.1:3000/users", {
     method: 'POST',
@@ -84,8 +82,6 @@ const respuesta0 = await fetch("http://127.0.0.1:3000/users?documento="+doc.valu
   },
 })
 const datos0 = await respuesta0.json()
-console.log(datos0)
-console.log(data)
 if (datos0.length == 1) {
   const response = await fetch("http://127.0.0.1:3000/users", {
   method: 'POST',

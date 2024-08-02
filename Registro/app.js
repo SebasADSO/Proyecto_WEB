@@ -1,5 +1,4 @@
 import { letras, email, documento, Constraseña } from "../Js/module_user.js";
-import { Nombre, cod, date } from "../Js/module_rol.js"
 import { buscar, educacion, rol } from "../Js/doc_tipo.js";
 import { validar_condicion } from "../Js/module_validar_registro.js"
 import { postData2 } from "../Js/module_postdata.js";

@@ -1,69 +1,69 @@
 {
   "documentos": [
     {
-      "id": 0,
+      "id": "0",
       "Tipo": "Cedula de Ciudadania"
     },
     {
-      "id": 1,
+      "id": "1",
       "Tipo": "Tarjeta de Indentidad"
     },
     {
-      "id": 2,
+      "id": "2",
       "Tipo": "Pasaporte"
     },
     {
-      "id": 3,
+      "id": "3",
       "Tipo": "Cedula de Extranjeria"
     },
     {
-      "id": 4,
+      "id": "4",
       "Tipo": "Permiso Procteción Temporal"
     }
   ],
   "roles": [
     {
-      "id": 1,
+      "id": "1",
       "rol": "Ninguno"
     },
     {
-      "id": 2,
+      "id": "2",
       "rol": "Funcionario"
     },
     {
-      "id": 3,
+      "id": "3",
       "rol": "Instructor"
     }
   ],
   "Educacion": [
     {
-      "id": 0,
+      "id": "0",
       "Nivel": "Bachiller"
     },
     {
-      "id": 1,
+      "id": "1",
       "Nivel": "Bachiller Tecnico"
     },
     {
-      "id": 2,
+      "id": "2",
       "Nivel": "Tecnico"
     },
     {
-      "id": 3,
+      "id": "3",
       "Nivel": "Tecnologo"
     },
     {
-      "id": 4,
+      "id": "4",
       "Nivel": "Universitario"
     },
     {
-      "id": 5,
+      "id": "5",
       "Nivel": "Doctorado"
     }
   ],
   "users": [
     {
-      "id": 1
+      "id": "1"
     },
     {
       "id": "11b3",
@@ -312,6 +312,32 @@
         "inicio_lectiva": "2024-07-04",
         "final_lectiva": "2024-07-07",
         "fecha_productiva": "2024-07-06",
+        "jornada": "Diurna"
+      },
+      "condicion": {
+        "Condicion1": "Ninguna",
+        "Condicion2": "Ninguna",
+        "Condicion3": "Ninguna",
+        "Condicion4": "Ninguna",
+        "Condicion5": "Ninguna"
+      }
+    },
+    {
+      "id": "5e1b",
+      "nombre": "User",
+      "apellido": "Sena",
+      "constraseña": "Sen@1234",
+      "tipo_de_docemento": "Cedula de Ciudadania",
+      "documento": "45645456465",
+      "email": "test@gmail.com",
+      "rol": {
+        "nivel": "aprendiz",
+        "cod_programa": "7887998",
+        "cod_ficha": "778998",
+        "nombre_programa": "ADSO",
+        "inicio_lectiva": "2024-08-06",
+        "final_lectiva": "2024-08-14",
+        "fecha_productiva": "2024-08-05",
         "jornada": "Diurna"
       },
       "condicion": {

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selección de rol en centro de formación</title>
     <link rel="stylesheet" href="Registro_Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header class="banner">
@@ -18,92 +19,100 @@
             <section class="Menu_registro">
               <h2 class="Menu_registro--title">Registro Información personal del usuario</h2>
                 <article class="Menu_form" id="formulario">
-                  <label for="nombre" id="nombre_label">Nombre:
-                    <input placeholder="Nombre" class="Menu_form--data nombre" type="text" id="nombre" required>
-                  </label>
-                  <label for="apellido">Apellido:
-                    <input placeholder="Apellido" class="Menu_form--data apellido" type="text" id="apellido" required>
-                  </label>
-                  <label for="tipo_doc">Tipo de documento:
-                    <select class="Menu_form--docselect tipo_doc" id="tipo_doc">
-                    </select>
-                  </label>
-                  <label for="documento">N° de documento:
-                    <input placeholder="N° documento" class="Menu_form--data documento" type="text" id="documento" required>
-                  </label>
-                  <label for="email">Email:
-                    <input placeholder="Email" class="Menu_form--data email" type="text" id="email" required>
-                  </label>
-                  <label for="contraseña" id="contra_label">Contraseña:
-                    <input placeholder="Contraseña" class="Menu_form--data contraseña" type="password" id="Constraseña" required>
-                  </label>
-                  <label for="contraseña">Confirmar Contraseña:
-                    <input placeholder="Contraseña" class="Menu_form--data contraseña" type="password" id="re_Constraseña" required>
-                  </label>
+                  <div class="Input_container">
+                    <label for="nombre" id="nombre_label">Nombre:</label>
+                      <input placeholder="Nombre" class="Menu_form--data nombre" type="text" id="nombre" required>
+                  </div>
+                  <div class="Input_container">
+                    <label for="apellido">Apellido:</label>
+                      <input placeholder="Apellido" class="Menu_form--data apellido" type="text" id="apellido" required>
+                  </div>
+                  <div class="Input_container">
+                    <label for="tipo_doc">Tipo de documento:</label>
+                      <select class="Menu_form--docselect tipo_doc" id="tipo_doc">
+                      </select>
+                  </div>
+                  <div class="Input_container">
+                    <label for="documento">N° de documento:</label>
+                      <input placeholder="N° documento" class="Menu_form--data documento" type="text" id="documento" required>
+                  </div>
+                  <div class="Input_container">
+                    <label for="email">Email:</label>
+                      <input placeholder="Email" class="Menu_form--data email" type="text" id="email" required>
+                  </div>
+                  <div class="Input_container">
+                    <label for="contraseña" id="contra_label">Contraseña:</label>
+                      <input placeholder="Contraseña" class="Menu_form--data contraseña" type="password" id="Constraseña" required>
+                  </div>
+                  <div class="Input_container">
+                    <label for="contraseña">Confirmar Contraseña:</label>
+                      <input placeholder="Contraseña" class="Menu_form--data contraseña" type="password" id="re_Constraseña" required>
+                  </div>
                 </article>     
               </section>
-              <section class="Menu_registro rol_container">
+              <section class="Menu_registro">
                 <h2 class="Menu_registro--title" id="title_rol"></h2>
-                <article class="Menu_form" id="formulario">
-                  <label for="rol">Rol:<br>
-                    <select class="Menu_form--docselect rol" id="rol">
+                <article class="Menu_form rol_container" id="formulario">
+                  <div class="Input_container">
+                    <label for="rol">Rol:<br></label>
+                      <select class="Menu_form--docselect rol" id="rol">
                     </select>
-                  </label>
-                  <label for="Nivel">Nivel de formación:
-                    <select class="Menu_form--data Nivel" id="educacion" style="margin-top: 10px;">
-                    </select>
-                  </label>
+                  </div>
+                  <div class="Input_container">
+                    <label for="Nivel">Nivel de formación:</label>
+                      <select class="Menu_form--data Nivel" id="educacion" style="margin-top: 10px;">
+                      </select>
+                  </div>
                   <fieldset class="Menu_form--field" title="Dias">
                     <legend>Dias</legend>
-                    <label for="lunes">Lunes
+                    <label for="lunes">Lunes</label>
                         <input type="checkbox" name="Lunes" id="lunes" value="Lunes" class="Menu_form--checkbox">
-                      </label>
-                    <label for="martes">Martes
+                    <label for="martes">Martes</label>
                         <input type="checkbox" name="Martes" id="martes" value="Martes" class="Menu_form--checkbox">
-                    </label>
-                    <label for="miercoles">Miercoles
+                    <label for="miercoles">Miercoles</label>
                         <input type="checkbox" name="Miercoles" id="miercoles" value="Miercoles" class="Menu_form--checkbox">
-                    </label>
-                    <label for="jueves">Jueves
+                    <label for="jueves">Jueves</label>
                         <input type="checkbox" name="Jueves" id="jueves" value="Jueves" class="Menu_form--checkbox">
-                    </label>
-                    <label for="viernes">Viernes
+                    <label for="viernes">Viernes</label>
                         <input type="checkbox" name="Viernes" id="viernes" value="Viernes" class="Menu_form--checkbox">
-                    </label>
-                    <label for="sabado">Sabado
+                    <label for="sabado">Sabado</label>
                         <input type="checkbox" name="Sabado" id="sabado" value="Sabado" class="Menu_form--checkbox">
-                    </label>
                   </fieldset>
                 </article> 
               </section>
               <section class="Menu_registro condiciones">
                 <h2 class="Menu_registro--title">Registro Información condiciones del usuario</h2>
                 <article class="Menu_form" id="formulario">
-                  <h3 class="Menu_form--title">Condicion
+                  <div class="Menu_form--title">
+                  <h3>Condicion</h3>
                     <select class="Menu_form--docselect condicion" id="Condicion_1">
                       <option value="Ninguna">Ninguna</option>
                     </select>
-                  </h3>
-                  <h3 class="Menu_form--title">Condicion
+                  </div>
+                  <div class="Menu_form--title Input_container">
+                    <h3>Condicion</h3>
                     <select class="Menu_form--docselect condicion" id="Condicion_2">
                       <option value="Ninguna">Ninguna</option>
                     </select>
-                  </h3>
-                  <h3 class="Menu_form--title">Condicion
+                  </div>
+                  <div class="Menu_form--title Input_container">
+                    <h3>Condicion</h3>
                     <select class="Menu_form--docselect condicion" id="Condicion_3">
                       <option value="Ninguna">Ninguna</option>
                     </select>
-                  </h3>
-                  <h3 class="Menu_form--title">Condicion
+                  </div>
+                  <div class="Menu_form--title Input_container">
+                    <h3>Condicion</h3>
                     <select class="Menu_form--docselect condicion" id="Condicion_4">
                       <option value="Ninguna">Ninguna</option>
                     </select>
-                  </h3>
-                  <h3 class="Menu_form--title">Condicion
+                  </div>
+                  <div class="Menu_form--title Input_container">
+                    <h3>Condicion</h3>
                     <select class="Menu_form--docselect condicion" id="Condicion_5">
                       <option value="Ninguna">Ninguna</option>
                     </select>
-                  </h3>
+                  </div>
                 </article>
               </section>
               <section class="Menu_form--post">

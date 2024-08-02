@@ -103,6 +103,7 @@ $privacidad.addEventListener("change", (event) => {
                 if (cod($cod_program) && cod($cod_ficha) && Nombre($name_program) && date($start_lect) && date($end_lect) && date($product) && Nombre($jornada)) {
                     if (validar_condicion($Condicion_1, $Condicion_2, $Condicion_3, $Condicion_4, $Condicion_5)) {
                         postData(nivel ,$nombre, $apellido, $Constraseña, $tipo_doc, $documento, $email, $cod_program, $cod_ficha,$name_program, $start_lect, $end_lect, $product, $jornada,$Condicion_1, $Condicion_2, $Condicion_3, $Condicion_4, $Condicion_5)
+                        location.href = "../Registro/Correct.html"
                     }
                     else if (!validar_condicion($Condicion_1, $Condicion_2, $Condicion_3, $Condicion_4, $Condicion_5)) {
                         throw new Error("Revisar los campos de las condiciones")

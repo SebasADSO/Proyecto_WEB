@@ -7,6 +7,7 @@
     width: 100%;
     height: 100%;
   }
+/* Banner */
 .banner {
     display: flex;
     flex-direction: row;
@@ -37,31 +38,12 @@
     background-color: var(--bg--buttom--color);
     border-radius: 8px;
   }
-  .Menu {
-    display: flex;
-    height: 90%;
-    flex-direction: column;
-    justify-items: center;
-  }
-  .Menu_container {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    background-color: var(--bg--container--color);
-    border-radius: 8px;
-    gap: 50px;
-    width: 80%;
-    height: auto;
-    align-content: center;
-    justify-content: center;
-  }
-  .Menu_title {
-    margin-top: 10px;
-  }
   .fa-home {
     font-size: 28px;
     margin: 5px;
   }
+  
+  
 /* Landing */
 .landing__page {
   margin-top: 10px;
@@ -76,12 +58,64 @@
 
 
 
-
+/* Menu formulario */
+.Menu {
+  display: flex;
+  height: 90%;
+  flex-direction: column;
+  justify-items: center;
+}
+.Menu_container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: var(--bg--container--color);
+  border-radius: 8px;
+  gap: 50px;
+  width: 80%;
+  height: auto;
+  align-content: center;
+  justify-content: center;
+}
+.Menu_form--all {
+  display: grid;
+  text-align: center;
+  width: 100%;
+  grid-template-columns: repeat(1, 80%);
+  justify-content: center;
+}
+.Menu_registro {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: #e1f4ffe5;
+  border-radius: 8px;
+  gap: 50px;
+  width: 100%;
+  margin-top: 30px;
+  min-height: 400px;
+  height: fit-content;
+  align-content: center;
+}
+.Menu_form {
+  display: grid;
+  min-width: 300px;
+  max-width: 100%;
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: 70px;
+  height: fit-content;
+  justify-content: center;
+  justify-items: start;
+  gap: 100px 40px;
+  padding: 10px;
+}
 .Menu_form--data {
   background: var(--bg--input--color);
   border: none;
   padding: 15px;
   border-radius: 4px;
+  width: 170px;
+  height: 25px;
   text-align: center;
 }
 .Menu_form--docselect {
@@ -98,8 +132,9 @@
 }
 .Menu_form--field {
   display: grid;
+  align-self: self-start;
   background-color: var(--bg--input--color);
-  grid-template-columns: repeat(3, 150px);
+  grid-template-columns: repeat(4, 100px);
   justify-content: center;
   align-items: center;
   font-size: 18px;
@@ -108,69 +143,61 @@
   border: 2px solid #000;
   border-radius: 8px;
 }
-.Menu_registro {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  background-color: #e1f4ffe5;
-  border-radius: 8px;
-  gap: 50px;
-  width: 100%;
-  margin-top: 30px;
-  height: auto;
-  align-content: center;
-}
-.Menu_form--all {
-  width: 80%;
-  height: 100%;
-}
 .Menu_registro--title {
   margin-top: 10px;
 }
 .Menu_form--label {
   background-color: #000;
 }
-.Menu_form {
-  display: grid;
-  min-width: 300px;
-  max-width: 100%;
-  grid-template-columns: repeat(5, 200px);
-  grid-template-rows: 70px;
-  min-height: 350px;
-  justify-content: center;
-  justify-items: start;
-  gap: 100px 40px;
-  padding: 10px;
+.Input_container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
 }
-@media ( max-width: 480px) {
-  html {
-    width: 100%;
-    height: 100%;
-  }
-  .Menu {
-    max-width: 100%;
-  }
-  .Menu_container {
-      width: 100%;
-      background-color: var(--bg--container--color--transparent);
-  }
-  .fa-home {
-      display: none;
-  }
+
+
+
+/* Responsive */
+@media (max-width: 1310px) {
   .Menu_form--all {
-    width: 100%;
+    gap: 50px;
   }
   .Menu_form {
-    width: 100%;
-    grid-template-columns: repeat(2, 150px);
-    grid-template-rows: 70px;
-    padding: 0;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 30%);
+    gap: 0 0;
+    justify-items: center;
   }
-  .Menu_form--data {
-    width: 100px;
+  .Input_container {
+    padding: 10px;
+    margin: 0;
+  }
+  .Menu_form > h3 {
+    margin: 20px;
+    width: 200px;
+  }
+  .Menu_registro {
+    height: 650px;
+    margin-bottom: 100px;
+    margin: 0;
+  }
+}
+
+@media ( max-width: 590px) {
+  .Menu_form {
+    grid-template-columns: 100%;
+    grid-template-rows: 100px;
+    gap: 0 0;
+    justify-items: center;
+  }
+  .Menu_registro {
+    height: 950px;
+    margin-bottom: 100px;
+    margin: 0;
   }
   .Menu_form--field {
-    grid-template-columns: repeat(2, 150px);
-    width: 150px;
+    height: fit-content;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: 50px;
   }
 }
