@@ -23,8 +23,10 @@
 }
 .Menu_register {
   margin: 0 0 20px;
+  border: none;
 }
 .Menu_recover {
+  border: none;
   margin: 0 0 20px;
 }
 @media ( max-width: 767px) {

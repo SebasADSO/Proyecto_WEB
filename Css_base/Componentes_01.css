@@ -42,7 +42,17 @@
     font-size: 28px;
     margin: 5px;
   }
-  
+  /* ALT banner */
+  .banner_home {
+    background-color: #00304D;
+    width: 100%;
+    height: auto;
+  }
+  .logo_sena {
+    width: 100px;
+    height: 70px;
+    margin: 10px;
+  }
   
 /* Landing */
 .landing__page {
@@ -154,8 +164,30 @@
   flex-direction: column;
   width: fit-content;
 }
+/* botones */
 
+.btn_alt {
+  padding: var(--padding);
+  color: var(--bg--text--color--white);
+  border: none;
+  border-radius: 8px;
+  background-color: var(--bg--buttom--color);
+}
 
+/* borde */
+.e {
+  border: 1px solid red;
+  border-radius: 8px;
+}
+.b {
+  border: 1px solid greenyellow;
+  border-radius: 8px;
+}
+.span {
+  margin-top: 10px;
+  width: 180px;
+  color: red;
+}
 
 /* Responsive */
 @media (max-width: 1310px) {
@@ -199,5 +231,14 @@
     height: fit-content;
     grid-template-columns: repeat(2, 100px);
     grid-template-rows: 50px;
+  }
+  @media (max-width: 400px) {
+    .Menu_form {
+     max-width: 200px;
+     min-width: 150px;
+    }
+    .Menu_form--field {
+      margin: 10px;
+    }
   }
 }

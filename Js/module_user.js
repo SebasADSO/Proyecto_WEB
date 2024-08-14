@@ -86,3 +86,70 @@ export const letras = element => {
         return false
       }
   }
+
+  export const pass_isnull = element => {
+    const $base = document.getElementById('Menu_form--pass')
+    const $span = document.createElement('span')
+    if (element.value.trim() == "") {
+        if ($base.children.length == 4) {
+          element.classList.remove("b")
+          element.classList.add("e")
+          return false
+        } else {
+          element.classList.remove("b")
+          element.classList.add("e")
+          $span.classList ='span'
+          $span.setAttribute("id", "wrong")
+          $span.innerHTML = "La contraseña no puede estar vacia"
+          $base.insertBefore($span, $base.children[3])
+          return false
+        }
+      }
+      else if (!element.value.trim() == "") {
+        if ($base.children.length == 4) {
+          let remove = document.getElementById('wrong')
+          remove.remove()
+          element.classList.remove("e")
+          element.classList.add("b")
+          return true
+        }
+        else {
+          element.classList.remove("e")
+          element.classList.add("b")
+          return true
+        }   
+      }
+  }
+  export const num_isnull = element => {
+    const $base = document.getElementById('Menu_form--num')
+    const $span = document.createElement('span')
+    if (element.value.trim() == "") {
+        if ($base.children.length == 4) {
+          element.classList.remove("b")
+          element.classList.add("e")
+          return false
+        } else {
+          element.classList.remove("b")
+          element.classList.add("e")
+          $span.classList ='span'
+          $span.setAttribute("id", "wrong")
+          $span.innerHTML = "El numero de documento no puede estar vacio"
+          $base.insertBefore($span, $base.children[3])
+          return false
+        }
+      }
+      else if (!element.value.trim() == "") {
+        if ($base.children.length == 4) {
+          let remove = document.getElementById('wrong')
+          remove.remove()
+          element.classList.remove("e")
+          element.classList.add("b")
+          return true
+        }
+        else {
+          element.classList.remove("e")
+          element.classList.add("b")
+          return true
+        }   
+      }
+  }

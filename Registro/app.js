@@ -81,6 +81,7 @@ $privacidad.addEventListener("change", (event) => {
                     if (validar_condicion($Condicion_1, $Condicion_2, $Condicion_3, $Condicion_4, $Condicion_5)) {
                         if ($Constraseña.value == $Constraseña_confirm.value) {
                             postData2(nivel ,$nombre, $apellido, $Constraseña, $tipo_doc, $documento, $email, $rol, $educacion, dias, $Condicion_1, $Condicion_2, $Condicion_3, $Condicion_4, $Condicion_5)
+                            location.href = "../Registro/Correct.html"
                         } else {
                             $Constraseña.classList.add('e')
                             $Constraseña_confirm.classList.add('e')

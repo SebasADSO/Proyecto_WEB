@@ -92,32 +92,6 @@
       }
     },
     {
-      "id": "00ea",
-      "nombre": "Fernando",
-      "apellido": "Sayas",
-      "constraseña": "TeamoYesid123@",
-      "tipo_de_docemento": "Cedula de Extranjeria",
-      "documento": "123456789",
-      "email": "gomez@gmail.com",
-      "rol": {
-        "nivel": "aprendiz",
-        "cod_programa": "12345",
-        "cod_ficha": "2673126",
-        "nombre_programa": "ADSO",
-        "inicio_lectiva": "2024-07-24",
-        "final_lectiva": "2024-07-24",
-        "fecha_productiva": "2024-07-24",
-        "jornada": "Mañana"
-      },
-      "condicion": {
-        "Condicion1": "Ninguna",
-        "Condicion2": "Ninguna",
-        "Condicion3": "Ninguna",
-        "Condicion4": "Ninguna",
-        "Condicion5": "Ninguna"
-      }
-    },
-    {
       "id": "b1dc",
       "nombre": "Fernando",
       "apellido": "Sayas",
@@ -339,6 +313,102 @@
         "final_lectiva": "2024-08-14",
         "fecha_productiva": "2024-08-05",
         "jornada": "Diurna"
+      },
+      "condicion": {
+        "Condicion1": "Ninguna",
+        "Condicion2": "Ninguna",
+        "Condicion3": "Ninguna",
+        "Condicion4": "Ninguna",
+        "Condicion5": "Ninguna"
+      }
+    },
+    {
+      "id": "4896",
+      "nombre": "Yesid",
+      "apellido": "Pabon",
+      "constraseña": "Sena1234@",
+      "tipo_de_docemento": "Cedula de Ciudadania",
+      "documento": "44655644567",
+      "email": "yesid@gmail.com",
+      "rol": {
+        "nivel": "aprendiz",
+        "cod_programa": "3213213",
+        "cod_ficha": "3213123",
+        "nombre_programa": "ADSO",
+        "inicio_lectiva": "2024-08-22",
+        "final_lectiva": "2024-08-14",
+        "fecha_productiva": "2024-08-14",
+        "jornada": "Noche"
+      },
+      "condicion": {
+        "Condicion1": "Ninguna",
+        "Condicion2": "Ninguna",
+        "Condicion3": "Ninguna",
+        "Condicion4": "Ninguna",
+        "Condicion5": "Ninguna"
+      }
+    },
+    {
+      "id": "f0ab",
+      "nombre": "Lorem",
+      "apellido": "Lorem",
+      "constraseña": "Sena1234@",
+      "tipo_de_docemento": "Cedula de Ciudadania",
+      "documento": "789546213",
+      "email": "lorem@gmail.com",
+      "rol": {
+        "nivel": "",
+        "rol": "Funcionario",
+        "educacion": "Tecnico",
+        "dias": "Lunes Jueves"
+      },
+      "condicion": {
+        "Condicion1": "Ninguna",
+        "Condicion2": "Ninguna",
+        "Condicion3": "Ninguna",
+        "Condicion4": "Ninguna",
+        "Condicion5": "Ninguna"
+      }
+    },
+    {
+      "id": "6c14",
+      "nombre": "weqeqwe",
+      "apellido": "qweqweqw",
+      "constraseña": "Sena1234@",
+      "tipo_de_docemento": "Cedula de Ciudadania",
+      "documento": "233421421",
+      "email": "qwdrwwq@gmail.com",
+      "rol": {
+        "nivel": "",
+        "rol": "Funcionario",
+        "educacion": "Universitario",
+        "dias": "Lunes Jueves"
+      },
+      "condicion": {
+        "Condicion1": "Ninguna",
+        "Condicion2": "Ninguna",
+        "Condicion3": "Ninguna",
+        "Condicion4": "Ninguna",
+        "Condicion5": "Ninguna"
+      }
+    },
+    {
+      "id": "1464",
+      "nombre": "weqweq",
+      "apellido": "qewewqwe",
+      "constraseña": "Sena1234@",
+      "tipo_de_docemento": "Cedula de Ciudadania",
+      "documento": "123131",
+      "email": "tets@gmail.com",
+      "rol": {
+        "nivel": "aprendiz",
+        "cod_programa": "3123213",
+        "cod_ficha": "3123123",
+        "nombre_programa": "ADOS",
+        "inicio_lectiva": "2024-08-14",
+        "final_lectiva": "2024-08-22",
+        "fecha_productiva": "2024-08-09",
+        "jornada": "Tarde"
       },
       "condicion": {
         "Condicion1": "Ninguna",

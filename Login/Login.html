@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,16 +22,19 @@
         <h3>Tipo de documento</h3>
         <select class="Menu_form--docselect" id="tipo_doc">
         </select>
-        <h3>N° de documento</h3>
-        <input type="number" placeholder="N° documento" class="Menu_form--data" id="user_login">
-        <h3>Contraseña</h3>
-        <input type="password" placeholder="Contraseña" class="Menu_form--data" id="password_login">
-        <br>
+        <div class="Input_container" id="Menu_form--num">
+          <h3>N° de documento</h3><br>
+          <input type="number" placeholder="N° documento" class="Menu_form--data" id="user_login">
+        </div>
+        <div class="Input_container" id="Menu_form--pass">
+          <h3>Contraseña</h3><br>
+          <input type="password" placeholder="Contraseña" class="Menu_form--data" id="password_login">
+        </div>
         <button type="button" class="Menu_buttom" id="Login">INGRESAR</button>
       </form>
       <article class="Menu_option">
         <a href="../Registro/Select_rol.html" class="btn Menu_register"><i class="fa fa-user-plus" aria-hidden="true" style="font-size:24px; margin: 7px;"></i>Registrarse</a>
-        <a href="" class="btn Menu_recover"><i class="fa fa-question" aria-hidden="true" style="font-size:24px; margin: 7px;"></i>olvido su contraseña</a>
+        <a href="../Recover_pass/index.html" class="btn Menu_recover"><i class="fa fa-question" aria-hidden="true" style="font-size:24px; margin: 7px;"></i>olvido su contraseña</a>
       </article>
     </section>
     <script type="module" src="main.js"></script>
