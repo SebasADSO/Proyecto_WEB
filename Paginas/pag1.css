@@ -1,1 +1,56 @@
 @import url(../Css_base/Componentes_01.css);
+@import url(../Login/Login_Style.css);
+
+.Menu {
+    margin-top: 10px;
+}
+.Menu_options {
+    width: 100%;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 150px);
+    justify-content: space-evenly;
+    margin: 10px;
+    gap: 15px;
+}
+.Menu_container--options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--bg--buttom--color);
+}
+.Menu_container--options:hover {
+    background-color: var(--bg--buttom--color--hover);
+}
+.Options_name {
+    color: #fff;
+    margin: 5px;
+}
+.Menu_title {
+    margin: 20px;
+    text-align: center;
+}
+.desc {
+    width: 510px;
+    height: 300px;
+}
+.file {
+    width: 310px;
+}
+@media (max-width: 700px) {
+    .Menu_options {
+        grid-template-columns: 200px;
+        grid-template-rows: repeat(4, 150px);
+    }
+    .desc {
+        width: 210px;
+        height: 300px;
+    }
+    .file {
+        width: 210px;
+    }
+}

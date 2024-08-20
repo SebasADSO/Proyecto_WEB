@@ -153,3 +153,37 @@ export const letras = element => {
         }   
       }
   }
+
+
+  export const text_null = (element, container) => {
+    const $span = document.createElement('span')
+    if (element.value.trim() == "") {
+        if (container.children.length == 4) {
+          element.classList.remove("b")
+          element.classList.add("e")
+          return false
+        } else {
+          element.classList.remove("b")
+          element.classList.add("e")
+          $span.classList ='span'
+          $span.setAttribute("id", "wrong")
+          $span.innerHTML = "El campo no puede estar vacio"
+          container.insertBefore($span, container.children[3])
+          return false
+        }
+      }
+      else if (!element.value.trim() == "") {
+        if (container.children.length == 4) {
+          let remove = document.getElementById('wrong')
+          remove.remove()
+          element.classList.remove("e")
+          element.classList.add("b")
+          return true
+        }
+        else {
+          element.classList.remove("e")
+          element.classList.add("b")
+          return true
+        }   
+      }
+  }

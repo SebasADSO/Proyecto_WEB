@@ -6,3 +6,8 @@ export const correct_re = () => {
         location.href = "../Login/Login.html"
     }, 5000);
 }
+export const logout = () => {
+    localStorage.setItem("user", "")
+    localStorage.setItem("rol", "")
+    location.href="../Login/Login.html"
+}

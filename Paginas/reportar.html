@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar</title>
+    <link rel="stylesheet" href="pag1.css">
+</head>
+<body>
+    <header class="banner_home">
+        <figure class="banner_logo" id="home">
+          <img src="../SVG/logo-sena-verde-complementario-svg-2022.svg" alt="logo_Sena_ultra_4k_60fps.png" class="logo_sena">
+        </figure>
+      </header>
+      <main class="Menu">
+        <section class="Menu_container">
+          <h1 class="Menu_title">REPORTAR</h1>
+          <form class="Menu_login_form">
+            <div class="Input_container" id="Menu_form--title">
+              <h3>ENCABEZADO DEL HECHO</h3><br>
+              <input type="text" placeholder="Toma corriente..." class="Menu_form--data" id="titulo">
+            </div>
+            <div class="Input_container" id="Menu_form--desc">
+              <h3>DESCRIPCIÓN</h3><br>
+              <textarea type="text" name="DESCRIPCIÓN" class="Menu_form--data desc" id="descripcion"></textarea>
+            </div>
+            <div class="Input_container" id="Menu_form--site">
+              <h3>LUGAR</h3><br>
+              <input type="text" placeholder="Salón..." class="Menu_form--data" id="lugar">
+            </div>
+            <!-- <div class="Input_container" id="Menu_form--pass">
+              <h3>SOPORTE</h3><br>
+              <input type="file" placeholder="SOPORTE" class="Menu_form--data file" id="file">
+            </div> -->
+            <button type="button" class="Menu_buttom" id="subir">SUBIR</button>
+          </form>
+    </section>
+    </main>
+    <script type="module" src="reportar.js"></script>
+</body>
+</html>

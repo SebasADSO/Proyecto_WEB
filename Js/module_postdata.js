@@ -99,3 +99,29 @@ if (datos0.length == 1) {
   alert(error)
 }
 }
+
+
+export async function postDataReport(user_id, title, desc, site, fecha_r) {
+  let data = {
+    "id_user_fk": user_id,
+    "titulo": title.value,
+    "constraseña": desc.value,
+    "tipo_de_docemento": site.value,
+    "documento": fecha_r,
+    "estado": {
+      "estado": "PENDIENTE",
+      "fecha_revision": "0000-00-00",
+      "tipo_peligro": "DESCONOCIDO",
+      "nivel_peligro": "DESCONOCIDO",
+    }
+  };
+  const response = await fetch("http://127.0.0.1:3000/reportes", {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify(data)
+  })
+  alert("REPORTE RESIVIDO")
+  return response.json()
+}

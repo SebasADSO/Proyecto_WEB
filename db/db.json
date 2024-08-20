@@ -418,5 +418,49 @@
         "Condicion5": "Ninguna"
       }
     }
+  ],
+  "reportes": [
+    {
+      "id": "5f6c",
+      "id_user_fk": "11b3",
+      "titulo": "Caida escalera",
+      "constraseña": "Me cai de la escalera xxdxdxdxdxdxdxdx",
+      "tipo_de_docemento": "SENA CIMI",
+      "documento": "Tue Aug 20 2024",
+      "estado": {
+        "estado": "PENDIENTE",
+        "fecha_revision": "0000-00-00",
+        "tipo_peligro": "DESCONOCIDO",
+        "nivel_peligro": "DESCONOCIDO"
+      }
+    },
+    {
+      "id": "f490",
+      "id_user_fk": "11b3",
+      "titulo": "AUIDA",
+      "constraseña": "AUIDA PLS",
+      "tipo_de_docemento": "OKISDE",
+      "documento": "Tue Aug 20 2024",
+      "estado": {
+        "estado": "PENDIENTE",
+        "fecha_revision": "0000-00-00",
+        "tipo_peligro": "DESCONOCIDO",
+        "nivel_peligro": "DESCONOCIDO"
+      }
+    },
+    {
+      "id": "dc0c",
+      "id_user_fk": "11b3",
+      "titulo": "AUIDA x2",
+      "constraseña": "AUIDA x2",
+      "tipo_de_docemento": "OK",
+      "documento": "Tue Aug 20 2024",
+      "estado": {
+        "estado": "PENDIENTE",
+        "fecha_revision": "0000-00-00",
+        "tipo_peligro": "DESCONOCIDO",
+        "nivel_peligro": "DESCONOCIDO"
+      }
+    }
   ]
 }

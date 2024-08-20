@@ -13,7 +13,8 @@ const login = async function (tipo, num, pass) {
       result_one.forEach(element => {
         i++
         if (element.tipo_de_docemento == tipo.value && element.documento == num.value && element.constraseña == pass.value) {
-          localStorage.setItem("user=", element.id)
+          localStorage.setItem("user", element.id)
+          localStorage.setItem("rol", element.rol.nivel)
           return bandera = true;
         }
         else if (!element.tipo_de_docemento == tipo.value && !element.documento == num.value && !element.constraseña == pass.value && element.id == 1) {
