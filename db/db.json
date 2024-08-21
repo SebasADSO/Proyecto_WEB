@@ -96,7 +96,7 @@
     {
       "id": "b1dc",
       "nombre": "Fernando",
-      "apellido": "Gomez",
+      "apellido": "Sayas",
       "constraseña": "TeamoYesid123@",
       "tipo_de_docemento": "Cedula de Ciudadania",
       "documento": "123456789",
@@ -494,6 +494,20 @@
       "constraseña": "AUIDA x2",
       "tipo_de_docemento": "OK",
       "documento": "Tue Aug 20 2024",
+      "estado": {
+        "estado": "PENDIENTE",
+        "fecha_revision": "0000-00-00",
+        "tipo_peligro": "DESCONOCIDO",
+        "nivel_peligro": "DESCONOCIDO"
+      }
+    },
+    {
+      "id": "1e19",
+      "id_user_fk": null,
+      "titulo": "Toma corriente",
+      "constraseña": "Un toma corriente auida",
+      "tipo_de_docemento": "Fabrica de software",
+      "documento": "Wed Aug 21 2024",
       "estado": {
         "estado": "PENDIENTE",
         "fecha_revision": "0000-00-00",

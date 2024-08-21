@@ -33,7 +33,7 @@ site.addEventListener("blur", (event) => {
     text_null(site, site_c)
 })
 
-const user_id = localStorage.getItem("user=")
+const user_id = localStorage.getItem("user")
 
 const tiempoTranscurrido = Date.now();
 const hoy = new Date(tiempoTranscurrido);
