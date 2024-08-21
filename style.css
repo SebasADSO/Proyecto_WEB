@@ -1,5 +1,5 @@
-@import url(../../Css_base/root.css);
-@import url(../../Css_base/Componentes_01.css);
+@import url(Css_base/root.css);
+@import url(Css_base/Componentes_01.css);
 
 * {
   box-sizing: border-box;
