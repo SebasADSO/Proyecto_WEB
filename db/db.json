@@ -514,6 +514,20 @@
         "tipo_peligro": "DESCONOCIDO",
         "nivel_peligro": "DESCONOCIDO"
       }
+    },
+    {
+      "id": "d400",
+      "id_user_fk": "b1dc",
+      "titulo": "Otro reporte",
+      "constraseña": "xxdxdxd",
+      "tipo_de_docemento": "Salon",
+      "documento": "Wed Aug 21 2024",
+      "estado": {
+        "estado": "PENDIENTE",
+        "fecha_revision": "0000-00-00",
+        "tipo_peligro": "DESCONOCIDO",
+        "nivel_peligro": "DESCONOCIDO"
+      }
     }
   ]
 }
