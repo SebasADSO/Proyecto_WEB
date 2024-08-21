@@ -69,10 +69,11 @@
       "id": "11b3",
       "nombre": "Aprendiz",
       "apellido": "Sena",
-      "constraseña": "asd123ASD@@",
-      "tipo_de_docemento": "Cedula de Ciudadania",
-      "documento": "12312321",
+      "constraseña": "Cedula de Ciudadania",
+      "tipo_de_docemento": "12312321",
+      "documento": "test@gmail.com",
       "email": "test@gmail.com",
+      "estado": "ACTIVO",
       "rol": {
         "nivel": "aprendiz",
         "cod_programa": "21332112",
@@ -89,16 +90,18 @@
         "Condicion3": "Ninguna",
         "Condicion4": "Ninguna",
         "Condicion5": "Ninguna"
-      }
+      },
+      "titulo": "AprendizSena"
     },
     {
       "id": "b1dc",
       "nombre": "Fernando",
-      "apellido": "Sayas",
+      "apellido": "Gomez",
       "constraseña": "TeamoYesid123@",
-      "tipo_de_docemento": "Cedula de Extranjeria",
+      "tipo_de_docemento": "Cedula de Ciudadania",
       "documento": "123456789",
       "email": "gomez@gmail.com",
+      "estado": "ACTIVO",
       "rol": {
         "nivel": "aprendiz",
         "cod_programa": "12345",
@@ -110,25 +113,25 @@
         "jornada": "Mañana"
       },
       "condicion": {
-        "Condicion1": "Ninguna",
-        "Condicion2": "Ninguna",
-        "Condicion3": "Ninguna",
-        "Condicion4": "Ninguna",
-        "Condicion5": "Ninguna"
+        "Condicion1": "NINGUNA",
+        "Condicion2": "NINGUNA",
+        "Condicion3": "NINGUNA",
+        "Condicion4": "NINGUNA",
+        "Condicion5": "NINGUNA"
       }
     },
     {
       "id": "1020",
-      "nombre": "SSSS",
+      "nombre": "CARLOS",
       "apellido": "SSSSSSS",
       "constraseña": "Sen@1234",
-      "tipo_de_docemento": "Pasaporte",
+      "tipo_de_docemento": "Cedula de Ciudadania",
       "documento": "3123213",
       "email": "test@gamil.com",
+      "estado": "ACTIVO",
       "rol": {
-        "nivel": "",
-        "rol": "Funcionario",
-        "educacion": "Universitario"
+        "educacion": "Universitario",
+        "dias": " Jueves Viernes Sabado"
       },
       "condicion": {
         "Condicion1": "Ninguna",
@@ -146,6 +149,7 @@
       "tipo_de_docemento": "Cedula de Ciudadania",
       "documento": "43413413",
       "email": "test@gmail.com",
+      "estado": "ACTIVO",
       "rol": {
         "nivel": "",
         "rol": "Instructor",
@@ -168,6 +172,7 @@
       "tipo_de_docemento": "Cedula de Ciudadania",
       "documento": "423423423",
       "email": "tets@gnmail.com",
+      "estado": "ACTIVO",
       "rol": {
         "nivel": "",
         "rol": "Instructor",
@@ -190,6 +195,7 @@
       "tipo_de_docemento": "Cedula de Ciudadania",
       "documento": "2414124141",
       "email": "test@gmail.com",
+      "estado": "ACTIVO",
       "rol": {
         "nivel": "",
         "rol": "Instructor",
@@ -212,6 +218,7 @@
       "tipo_de_docemento": "Cedula de Ciudadania",
       "documento": "41214124124",
       "email": "tets@gmail.com",
+      "estado": "ACTIVO",
       "rol": {
         "nivel": "",
         "rol": "Funcionario",
@@ -234,6 +241,7 @@
       "tipo_de_docemento": "Cedula de Ciudadania",
       "documento": "4324242",
       "email": "resr@gmail.com",
+      "estado": "ACTIVO",
       "rol": {
         "nivel": "",
         "rol": "Funcionario",
@@ -256,6 +264,7 @@
       "tipo_de_docemento": "Cedula de Ciudadania",
       "documento": "465646794",
       "email": "Pepito@hotmail.com",
+      "estado": "ACTIVO",
       "rol": {
         "nivel": "",
         "rol": "Funcionario",
@@ -278,6 +287,7 @@
       "tipo_de_docemento": "Cedula de Ciudadania",
       "documento": "4124124124",
       "email": "test@gamil.com",
+      "estado": "ACTIVO",
       "rol": {
         "nivel": "aprendiz",
         "cod_programa": "42214234",
@@ -304,6 +314,7 @@
       "tipo_de_docemento": "Cedula de Ciudadania",
       "documento": "45645456465",
       "email": "test@gmail.com",
+      "estado": "ACTIVO",
       "rol": {
         "nivel": "aprendiz",
         "cod_programa": "7887998",
@@ -330,6 +341,7 @@
       "tipo_de_docemento": "Cedula de Ciudadania",
       "documento": "44655644567",
       "email": "yesid@gmail.com",
+      "estado": "ACTIVO",
       "rol": {
         "nivel": "aprendiz",
         "cod_programa": "3213213",
@@ -356,6 +368,7 @@
       "tipo_de_docemento": "Cedula de Ciudadania",
       "documento": "789546213",
       "email": "lorem@gmail.com",
+      "estado": "ACTIVO",
       "rol": {
         "nivel": "",
         "rol": "Funcionario",
@@ -378,6 +391,7 @@
       "tipo_de_docemento": "Cedula de Ciudadania",
       "documento": "233421421",
       "email": "qwdrwwq@gmail.com",
+      "estado": "ACTIVO",
       "rol": {
         "nivel": "",
         "rol": "Funcionario",
@@ -400,6 +414,34 @@
       "tipo_de_docemento": "Cedula de Ciudadania",
       "documento": "123131",
       "email": "tets@gmail.com",
+      "estado": "ACTIVO",
+      "rol": {
+        "nivel": "aprendiz",
+        "cod_programa": "3123213",
+        "cod_ficha": "3123123",
+        "nombre_programa": "ADOS",
+        "inicio_lectiva": "2024-08-14",
+        "final_lectiva": "2024-08-22",
+        "fecha_productiva": "2024-08-09",
+        "jornada": "Tarde"
+      },
+      "condicion": {
+        "Condicion1": "Ninguna",
+        "Condicion2": "Ninguna",
+        "Condicion3": "Ninguna",
+        "Condicion4": "Ninguna",
+        "Condicion5": "Ninguna"
+      }
+    },
+    {
+      "id": "1464",
+      "nombre": "admin",
+      "apellido": "sena",
+      "constraseña": "Sena1234@",
+      "tipo_de_docemento": "Cedula de Ciudadania",
+      "documento": "789456123",
+      "email": "tets@gmail.com",
+      "estado": "ACTIVO",
       "rol": {
         "nivel": "aprendiz",
         "cod_programa": "3123213",
@@ -423,15 +465,12 @@
     {
       "id": "5f6c",
       "id_user_fk": "11b3",
-      "titulo": "Caida escalera",
-      "constraseña": "Me cai de la escalera xxdxdxdxdxdxdxdx",
-      "tipo_de_docemento": "SENA CIMI",
-      "documento": "Tue Aug 20 2024",
+      "titulo": "auida",
+      "constraseña": "pls",
+      "tipo_de_docemento": "SENA",
+      "documento": "hoy",
       "estado": {
-        "estado": "PENDIENTE",
-        "fecha_revision": "0000-00-00",
-        "tipo_peligro": "DESCONOCIDO",
-        "nivel_peligro": "DESCONOCIDO"
+        "estado": "REVISADO"
       }
     },
     {

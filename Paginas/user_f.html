@@ -13,38 +13,38 @@
         </figure>
       </header>
       <main class="Menu">
-        <form class="Menu_form--all" method="post">
+        <form class="Menu_form--all">
             <section class="Menu_registro">
               <h2 class="Menu_registro--title">Registro Información personal del usuario</h2>
                 <article class="Menu_form" id="formulario">
                   <div class="Input_container">
                     <label for="nombre" id="nombre_label">Nombre:</label>
-                      <input placeholder="Nombre" class="Menu_form--data nombre" type="text" id="nombre" required>
+                      <input placeholder="Nombre" class="Menu_form--data nombre" type="text" id="nombre" required disabled>
                   </div>
                   <div class="Input_container">
                     <label for="apellido">Apellido:</label>
-                      <input placeholder="Apellido" class="Menu_form--data apellido" type="text" id="apellido" required>
+                      <input placeholder="Apellido" class="Menu_form--data apellido" type="text" id="apellido" required disabled>
                   </div>
                   <div class="Input_container">
                     <label for="tipo_doc">Tipo de documento:</label>
-                      <select class="Menu_form--docselect tipo_doc" id="tipo_doc">
+                      <select class="Menu_form--docselect tipo_doc" id="tipo_doc" disabled>
                       </select>
                   </div>
                   <div class="Input_container">
                     <label for="documento">N° de documento:</label>
-                      <input placeholder="N° documento" class="Menu_form--data documento" type="text" id="documento" required>
+                      <input placeholder="N° documento" class="Menu_form--data documento" type="text" id="documento" required disabled>
                   </div>
                   <div class="Input_container">
                     <label for="email">Email:</label>
-                      <input placeholder="Email" class="Menu_form--data email" type="text" id="email" required>
+                      <input placeholder="Email" class="Menu_form--data email" type="text" id="email" required disabled>
                   </div>
                   <div class="Input_container">
                     <label for="contraseña" id="contra_label">Contraseña:</label>
-                      <input placeholder="Contraseña" class="Menu_form--data contraseña" type="password" id="Constraseña" required>
+                      <input placeholder="Contraseña" class="Menu_form--data contraseña" type="password" id="Constraseña" required disabled>
                   </div>
                   <div class="Input_container">
                     <label for="contraseña">Confirmar Contraseña:</label>
-                      <input placeholder="Contraseña" class="Menu_form--data contraseña" type="password" id="re_Constraseña" required>
+                      <input placeholder="Contraseña" class="Menu_form--data contraseña" type="password" id="re_Constraseña" required disabled>
                   </div>
                 </article>     
               </section>
@@ -52,30 +52,14 @@
                 <h2 class="Menu_registro--title" id="title_rol"></h2>
                 <article class="Menu_form rol_container" id="formulario">
                   <div class="Input_container">
-                    <label for="rol">Rol:<br></label>
-                      <select class="Menu_form--docselect rol" id="rol">
-                    </select>
+                    <label for="contraseña">DIAS:<br></label>
+                      <input class="Menu_form--data contraseña" type="text" id="dias" required disabled>
                   </div>
                   <div class="Input_container">
-                    <label for="Nivel">Nivel de formación:</label>
-                      <select class="Menu_form--data Nivel" id="educacion" style="margin-top: 10px;">
-                      </select>
+                    <label for="contraseña">Nivel de formación:</label>
+                      <input class="Menu_form--data contraseña" type="text" id="educacion" required disabled>
                   </div>
-                  <fieldset class="Menu_form--field" title="Dias">
-                    <legend>Dias</legend>
-                    <label for="lunes">Lunes</label>
-                        <input type="checkbox" name="Lunes" id="lunes" value="Lunes" class="Menu_form--checkbox">
-                    <label for="martes">Martes</label>
-                        <input type="checkbox" name="Martes" id="martes" value="Martes" class="Menu_form--checkbox">
-                    <label for="miercoles">Miercoles</label>
-                        <input type="checkbox" name="Miercoles" id="miercoles" value="Miercoles" class="Menu_form--checkbox">
-                    <label for="jueves">Jueves</label>
-                        <input type="checkbox" name="Jueves" id="jueves" value="Jueves" class="Menu_form--checkbox">
-                    <label for="viernes">Viernes</label>
-                        <input type="checkbox" name="Viernes" id="viernes" value="Viernes" class="Menu_form--checkbox">
-                    <label for="sabado">Sabado</label>
-                        <input type="checkbox" name="Sabado" id="sabado" value="Sabado" class="Menu_form--checkbox">
-                  </fieldset>
+                  
                 </article> 
               </section>
               <section class="Menu_registro condiciones">
@@ -83,44 +67,42 @@
                 <article class="Menu_form" id="formulario">
                   <div class="Menu_form--title">
                   <h3>Condicion</h3>
-                    <select class="Menu_form--docselect condicion" id="Condicion_1">
+                    <select class="Menu_form--docselect condicion" id="Condicion_1" disabled>
                       <option value="Ninguna">Ninguna</option>
                     </select>
                   </div>
                   <div class="Menu_form--title Input_container">
                     <h3>Condicion</h3>
-                    <select class="Menu_form--docselect condicion" id="Condicion_2">
+                    <select class="Menu_form--docselect condicion" id="Condicion_2" disabled>
                       <option value="Ninguna">Ninguna</option>
                     </select>
                   </div>
                   <div class="Menu_form--title Input_container">
                     <h3>Condicion</h3>
-                    <select class="Menu_form--docselect condicion" id="Condicion_3">
+                    <select class="Menu_form--docselect condicion" id="Condicion_3" disabled>
                       <option value="Ninguna">Ninguna</option>
                     </select>
                   </div>
                   <div class="Menu_form--title Input_container">
                     <h3>Condicion</h3>
-                    <select class="Menu_form--docselect condicion" id="Condicion_4">
+                    <select class="Menu_form--docselect condicion" id="Condicion_4" disabled>
                       <option value="Ninguna">Ninguna</option>
                     </select>
                   </div>
                   <div class="Menu_form--title Input_container">
                     <h3>Condicion</h3>
-                    <select class="Menu_form--docselect condicion" id="Condicion_5">
+                    <select class="Menu_form--docselect condicion" id="Condicion_5" disabled>
                       <option value="Ninguna">Ninguna</option>
                     </select>
                   </div>
                 </article>
               </section>
-              <section class="Menu_form--post">
-                <label>
-                  <input class="Menu_form_terms" type="checkbox" id="privacidad">A registrarse usted acepta los <a href="#" style="text-decoration: none;">Terminos y condiciones</a> y nuestra <a href="#" style="text-decoration: none;">Politica de privacidad</a>
-                </label>
-                <button type="submit" id="siguiente" class="button_registrar" disabled>SIGUIENTE</button>
-              </section>
+              <article class="Menu_option">
+                <button class="btn Menu_register" id="update"><i class="fa fa-user-plus" aria-hidden="true" style="font-size:24px; margin: 7px;"></i>Guardar</button>
+                <button class="btn Menu_recover" id="modificar"><i class="fa fa-question" aria-hidden="true" style="font-size:24px; margin: 7px;"></i>Modificar</button>
+              </article>
           </form>
-          <script type="module" src="app.js"></script>
+          <script type="module" src="user_f.js"></script>
     </main>
 </body>
 </html>

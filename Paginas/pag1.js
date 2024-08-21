@@ -24,14 +24,8 @@ user.addEventListener("click", () => {
         case "aprendiz":
             location.href="../Paginas/user_a.html"
             break;
-        case "instructor":
+        case "":
             location.href="../Paginas/user_f.html"
-            break;
-        case "funcionario":
-            location.href="../Paginas/user_f.html"
-            break;
-        default:
-            alert("ERROR...")
             break;
     }
 })

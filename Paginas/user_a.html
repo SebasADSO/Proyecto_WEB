@@ -13,11 +13,11 @@
         </figure>
       </header>
       <main class="Menu">
-        <form class="Menu_form--all" method="post">
+        <form class="Menu_form--all">
           <section class="Menu_registro">
             <h2 class="Menu_registro--title">Registro Información personal del usuario</h2>
               <article class="Menu_form" id="formulario">
-                <div class="Input_container">
+                <div class="Input_container" id="nombre_c">
                   <label for="nombre" id="nombre_label">Nombre:</label>
                     <input placeholder="Nombre" class="Menu_form--data nombre" type="text" id="nombre" required disabled>
                 </div>
@@ -41,10 +41,6 @@
                 <div class="Input_container" id="contra_label">
                   <label for="contraseña">Contraseña:</label>
                     <input placeholder="Contraseña" class="Menu_form--data contraseña" type="password" id="Constraseña" required disabled>
-                </div>
-                <div class="Input_container">
-                  <label for="contraseña">Confirmar Contraseña:</label>
-                    <input placeholder="Contraseña" class="Menu_form--data contraseña" type="password" id="re_Constraseña" required disabled>
                 </div>
               </article>     
             </section>
@@ -116,7 +112,12 @@
                 </h3>
               </article>
             </section>
+            <article class="Menu_option">
+              <button class="btn Menu_register" id="update"><i class="fa fa-user-plus" aria-hidden="true" style="font-size:24px; margin: 7px;"></i>Guardar</button>
+              <button class="btn Menu_recover" id="modificar"><i class="fa fa-question" aria-hidden="true" style="font-size:24px; margin: 7px;"></i>Modificar</button>
+            </article>
         </form>
+        <script type="module" src="user_a.js"></script>
     </main>
 </body>
 </html>

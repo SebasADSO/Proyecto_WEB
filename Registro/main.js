@@ -17,7 +17,7 @@ let $documento = document.getElementById('documento');
 let $email = document.getElementById('email');
 let $privacidad = document.getElementById('privacidad');
 let $Constraseña = document.getElementById('Constraseña');
-const $button = document.getElementById('siguiente')
+const $button = document.getElementById('siguiente');
 
 $nombre.addEventListener("blur", () => {
   letras($nombre);

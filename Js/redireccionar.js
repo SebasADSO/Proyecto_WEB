@@ -11,3 +11,7 @@ export const logout = () => {
     localStorage.setItem("rol", "")
     location.href="../Login/Login.html"
 }
+
+export const login_ad = () => {
+    location.href="../Recover_pass/user_maneger.html"
+}

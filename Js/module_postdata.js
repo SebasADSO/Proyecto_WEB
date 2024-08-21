@@ -8,6 +8,7 @@ export async function postData(nivel ,name, last, contra, tipo, doc, email, cod_
       "tipo_de_docemento": tipo.value,
       "documento": doc.value,
       "email": email.value,
+      "estado": "ACTIVO",
       "rol": {
         "nivel": nivel, 
         "cod_programa": cod_program.value,
@@ -60,6 +61,7 @@ export async function postData2(nivel ,name, last, contra, tipo, doc, email, rol
     "tipo_de_docemento": tipo.value,
     "documento": doc.value,
     "email": email.value,
+    "estado": "ACTIVO",
     "rol": {
       "nivel": nivel, 
       "rol": rol.value,
@@ -124,4 +126,69 @@ export async function postDataReport(user_id, title, desc, site, fecha_r) {
   })
   alert("REPORTE RESIVIDO")
   return response.json()
+}
+
+export async function update_data(id, name, last, contra, tipo, doc, email, cod_program, cod_ficha, name_program, start_lect, end_lect, product, jornada) {
+  let data = {
+    "nombre": name.value,
+    "apellido": last.value,
+    "tipo_de_docemento": tipo.value,
+    "documento": doc.value,
+    "email": email.value,
+    "rol": {
+      "nivel": "aprendiz",
+      "cod_programa": cod_program.value,
+      "cod_ficha": cod_ficha.value,
+      "nombre_programa": name_program.value,
+      "inicio_lectiva": start_lect.value,
+      "final_lectiva": end_lect.value,
+      "fecha_productiva": product.value,
+      "jornada": jornada.value
+    },
+    "condicion": {
+      "Condicion1": "NINGUNA",
+      "Condicion2": "NINGUNA",
+      "Condicion3": "NINGUNA",
+      "Condicion4": "NINGUNA",
+      "Condicion5": "NINGUNA"
+    }
+  };
+const response = await fetch("http://127.0.0.1:3000/users/"+id, {
+  method: 'PATCH',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify(data, {encoding: 'utf8'})
+})
+.then(response => response.json())
+
+.then(data => console.log(data))
+
+.catch(error => console.error(data));
+}
+
+export async function update_data2(id, name, last, contra, tipo, doc, email, educacion, dias) {
+  let data = {
+    "nombre": name.value,
+    "apellido": last.value,
+    "tipo_de_docemento": tipo.value,
+    "documento": doc.value,
+    "email": email.value,
+    "rol": {
+      "educacion": educacion.value,
+      "dias": dias.value
+    }
+  };
+const response = await fetch("http://127.0.0.1:3000/users/"+id, {
+  method: 'PATCH',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify(data, {encoding: 'utf8'})
+})
+.then(response => response.json())
+
+.then(data => console.log(data))
+
+.catch(error => console.error(data));
 }

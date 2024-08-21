@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultar</title>
-    <link rel="stylesheet" href="pag1.css">
+    <link rel="stylesheet" href="../Paginas/pag1.css">
 </head>
 <body>
     <header class="banner_home">
@@ -42,26 +42,25 @@
             </div>
           </tr>
         </template>
-        <script type="module" src="consultar.js"></script>
         <!-- El modal para editar la información -->
 <div id="modal" class="modal">
   <div class="modal-content">
     <h2>Editar información</h2>
     <form>
-      <label for="name">id_fk:</label>
+      <label for="name">id:</label>
       <input type="text" id="name" disabled/>
       <br />
-      <label for="t_doc">titulo:</label>
-      <input type="text" id="t_doc" />
+      <label for="t_doc">nombre:</label>
+      <input type="text" id="t_doc" disabled/>
       <br />
-      <label for="ndoc">descripcion</label>
-      <input type="text" id="ndoc" />
+      <label for="ndoc">tipo de documento</label>
+      <input type="text" id="ndoc" disabled/>
       <br />
-      <label for="email">Lugar</label>
-      <input type="email" id="email" />
+      <label for="email">nº documento</label>
+      <input type="email" id="email" disabled/>
       <br />
-      <label for="direccion">Fecha:</label>
-      <input type="text" id="direccion" />
+      <label for="direccion">email:</label>
+      <input type="text" id="direccion" disabled/>
       <br />
       <label for="telefono">Estado:</label>
       <input type="tel" id="telefono" />
@@ -70,6 +69,7 @@
     </form>
   </div>
 </div>
+<script type="module" src="user_maneger.js"></script>
       </main>
 </body>
 </html>

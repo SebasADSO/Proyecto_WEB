@@ -48,3 +48,20 @@ export async function rol() {
       rol.appendChild(option)
   });
 }
+
+export async function condicion_list() {
+  const respuesta = await fetch("http://127.0.0.1:3000/condicion", {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+  })
+  const datos = await respuesta.json()
+  const educacion = document.getElementById('educacion')
+  datos.forEach(element => {
+      let option = document.createElement('option')
+      option.innerHTML = element.Nivel
+      option.setAttribute("value", element.Nivel)
+      educacion.appendChild(option)
+  });
+}
