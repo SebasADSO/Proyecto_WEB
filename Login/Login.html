@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Login_Style.css">
+  <title>Ingreso al aplicativo AIR - Sena</title>
+</head>
+
+<body>
+  <header class="banner">
+    <figure class="Sena_logo" >
+      <img src="../SVG/logo-sena-verde-complementario-svg-2022.svg">
+    </figure>
+    <a class="btn banner_news" href="../index.html" id="news"><i class="fa fa-home" aria-hidden="true"></i>INICIO</a>
+  </header>
+  <main class="Menu">
+    <section class="Menu_container">
+      <h1 class="Menu_title">Aplicación <br> de <br> informe de riesgos Sena <br>-<br> AIR Sena</h1>
+      <form class="Menu_login_form">
+        <h3>Tipo de documento</h3>
+        <select class="Menu_form--docselect" id="tipo_doc">
+        </select>
+        <div class="Input_container" id="Menu_form--num">
+          <h3>N° de documento</h3><br>
+          <input type="number" placeholder="N° documento" class="Menu_form--data" id="user_login">
+        </div>
+        <div class="Input_container" id="Menu_form--pass">
+          <h3>Contraseña</h3><br>
+          <input type="password" placeholder="Contraseña" class="Menu_form--data" id="password_login">
+        </div>
+        <button type="button" class="Menu_buttom" id="Login">INGRESAR</button>
+      </form>
+      <article class="Menu_option">
+        <a href="../Registro/Select_rol.html" class="btn Menu_register"><i class="fa fa-user-plus" aria-hidden="true" style="font-size:24px; margin: 7px;"></i>Registrarse</a>
+        <a href="../Recover_pass/index.html" class="btn Menu_recover"><i class="fa fa-question" aria-hidden="true" style="font-size:24px; margin: 7px;"></i>INGRESO ADMIN</a>
+      </article>
+    </section>
+    <script type="module" src="main.js"></script>
+  </main>
+</body>
+
+</html>

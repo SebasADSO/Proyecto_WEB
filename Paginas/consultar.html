@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar</title>
+    <link rel="stylesheet" href="pag1.css">
+</head>
+<body>
+    <header class="banner_home">
+        <figure class="banner_logo">
+          <img src="../SVG/logo-sena-verde-complementario-svg-2022.svg" alt="logo_Sena_ultra_4k_60fps.png" class="logo_sena">
+        </figure>
+      </header>
+      <main class="Menu">
+        <section class="Menu_container">
+          <h1 class="Menu_title">CONSULTA</h1>
+          <table>
+            <tbody></tbody>
+          </table>
+        </section>
+        <template id="template">
+          <thead>
+            <tr>
+              <td>Usuario</td>
+              <td>Titulo</td>
+              <td>descripcion</td>
+              <td>Lugar</td>
+              <td>Fecha</td>
+              <td>Estado</td>
+              <td>Fecha revision</td>
+            </tr>
+            
+          </thead>
+          <tr>
+            <td class="id"></td>
+            <td class="name"></td>
+            <td class="t_doc"></td>
+            <td class="ndoc"></td>
+            <td class="email"></td>
+            <td class="direccion"></td>
+            <td class="telefono"></td>
+            <div class="group">
+              <button class="edit">editar</button>
+            </div>
+          </tr>
+        </template>
+        <script type="module" src="consultar.js"></script>
+        <!-- El modal para editar la información -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <h2>Editar información</h2>
+    <form>
+      <label for="name">id_fk:</label>
+      <input type="text" id="name" disabled/>
+      <br />
+      <label for="t_doc">titulo:</label>
+      <input type="text" id="t_doc" disabled/>
+      <br />
+      <label for="ndoc">descripcion</label>
+      <input type="text" id="ndoc" disabled/>
+      <br />
+      <label for="email">Lugar</label>
+      <input type="email" id="email" disabled/>
+      <br />
+      <label for="direccion">Fecha:</label>
+      <input type="text" id="direccion" disabled/>
+      <br />
+      <label for="telefono">Estado:</label>
+      <input type="tel" id="telefono" />
+      <br />
+      <button id="save-btn">Guardar cambios</button>
+    </form>
+  </div>
+</div>
+      </main>
+</body>
+</html>

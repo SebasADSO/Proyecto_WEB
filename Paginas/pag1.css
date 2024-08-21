@@ -1,0 +1,164 @@
+@import url(../Css_base/Componentes_01.css);
+@import url(../Login/Login_Style.css);
+
+.Menu {
+    margin-top: 10px;
+}
+.Menu_options {
+    width: 100%;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 150px);
+    justify-content: space-evenly;
+    margin: 10px;
+    gap: 15px;
+}
+.Menu_container--options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--bg--buttom--color);
+}
+.Menu_container--options:hover {
+    background-color: var(--bg--buttom--color--hover);
+}
+.Options_name {
+    color: #fff;
+    margin: 5px;
+}
+.Menu_title {
+    margin: 20px;
+    text-align: center;
+}
+.desc {
+    width: 510px;
+    height: 300px;
+}
+.file {
+    width: 310px;
+}
+@media (max-width: 700px) {
+    .Menu_options {
+        grid-template-columns: 200px;
+        grid-template-rows: repeat(4, 150px);
+    }
+    .desc {
+        width: 210px;
+        height: 300px;
+    }
+    .file {
+        width: 210px;
+    }
+    .Menu_container {
+      overflow-x: scroll;
+    }
+}
+.rol_container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+tr {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #000;
+}
+tbody {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+td {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #000;
+}
+thead > tr {
+  background-color: #3e8e41;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #000;
+}
+.edit {
+    padding: var(--padding);
+    color: var(--bg--text--color--white);
+    border: none;
+    border-radius: 8px;
+    background-color: var(--bg--buttom--color);
+}
+
+
+/* Estilos para el modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal.show {
+    display: flex;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 400px;
+    margin: 40px auto;
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+  }
+  
+  .modal-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .modal-content label {
+    margin-bottom: 10px;
+  }
+  
+  .modal-content input, .modal-content textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content button[type="button"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .modal-content button[type="button"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Estilos para ocultar el modal */
+  .modal.hide {
+    display: none;
+  }
+

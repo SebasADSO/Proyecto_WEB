@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de usuario</title>
+    <link rel="stylesheet" href="pag1.css">
+</head>
+<body>
+    <header class="banner_home">
+        <figure class="banner_logo">
+          <img src="../SVG/logo-sena-verde-complementario-svg-2022.svg" alt="logo_Sena_ultra_4k_60fps.png" class="logo_sena">
+        </figure>
+      </header>
+      <main class="Menu">
+        <form class="Menu_form--all">
+          <section class="Menu_registro">
+            <h2 class="Menu_registro--title">Registro Información personal del usuario</h2>
+              <article class="Menu_form" id="formulario">
+                <div class="Input_container" id="nombre_c">
+                  <label for="nombre" id="nombre_label">Nombre:</label>
+                    <input placeholder="Nombre" class="Menu_form--data nombre" type="text" id="nombre" required disabled>
+                </div>
+                <div class="Input_container">
+                  <label for="apellido">Apellido:</label>
+                    <input placeholder="Apellido" class="Menu_form--data apellido" type="text" id="apellido" required disabled>
+                </div>
+                <div class="Input_container">
+                  <label for="tipo_doc">Tipo de documento:</label>
+                    <select class="Menu_form--docselect tipo_doc" id="tipo_doc" disabled>
+                    </select>
+                </div>
+                <div class="Input_container">
+                  <label for="documento">N° de documento:</label>
+                    <input placeholder="N° documento" class="Menu_form--data documento" type="text" id="documento" required disabled>
+                </div>
+                <div class="Input_container">
+                  <label for="email">Email:</label>
+                    <input placeholder="Email" class="Menu_form--data email" type="text" id="email" required disabled>
+                </div>
+                <div class="Input_container" id="contra_label">
+                  <label for="contraseña">Contraseña:</label>
+                    <input placeholder="Contraseña" class="Menu_form--data contraseña" type="password" id="Constraseña" required disabled>
+                </div>
+              </article>     
+            </section>
+            <section class="Menu_registro">
+              <h2 class="Menu_registro--title">Registro Información del programa del aprendiz</h2>
+              <article class="Menu_form" id="formulario">
+                <div class="Input_container">
+                  <label for="cod_programa">Codigo del programa:</label>
+                    <input placeholder="Codigo del programa" class="Menu_form--data cod_programa" type="text" id="cod_program" required disabled>
+                </div>
+                <div class="Input_container">
+                  <label for="cod_ficha">Codigo de ficha:</label>
+                    <input placeholder="Codigo de ficha" class="Menu_form--data cod_ficha" type="text" id="cod_ficha" required disabled>
+                </div>
+                <div class="Input_container">
+                  <label for="name_program">Nombre del programa:</label>
+                    <input placeholder="Nombre del programa" class="Menu_form--data name_program" type="text" id="name_program" required disabled>
+                </div>
+                <div class="Input_container">
+                  <label for="start_lect">Fecha inicio lectiva:</label>
+                    <input placeholder="Fecha inicio lectiva" class="Menu_form--data start_lect" type="date" id="start_lect" required disabled>
+                </div>
+                <div class="Input_container">
+                  <label for="end_lect">Fecha final lectiva:</label>
+                    <input placeholder="Fecha final lectiva" class="Menu_form--data end_lect" type="date" id="end_lect" required disabled>
+                </div>
+                <div class="Input_container">
+                  <label for="product">Fecha productiva:</label>
+                    <input placeholder="Fecha productiva" class="Menu_form--data product" type="date" id="product" required disabled>
+                </div>
+                <div class="Input_container">
+                  <label for="jornada">Jornada</label>
+                    <select class="Menu_form--docselect jornada" id="jornada" disabled>
+                      <option value="Mañana">Mañana</option>
+                      <option value="Tarde">Tarde</option>
+                      <option value="Diurna">Diurna</option>
+                      <option value="Noche">Noche</option>
+                    </select>
+                </div>
+              </article> 
+            </section>
+            <section class="Menu_registro condiciones">
+              <h2 class="Menu_registro--title">Registro Información condiciones del usuario</h2>
+              <article class="Menu_form" id="formulario">
+                <h3 class="Menu_form--title">Condicion
+                  <select class="Menu_form--docselect condicion" id="Condicion_1" disabled>
+                    <option value="Ninguna">Ninguna</option>
+                  </select>
+                </h3>
+                <h3 class="Menu_form--title">Condicion
+                  <select class="Menu_form--docselect condicion" id="Condicion_2" disabled>
+                    <option value="Ninguna">Ninguna</option>
+                  </select>
+                </h3>
+                <h3 class="Menu_form--title">Condicion
+                  <select class="Menu_form--docselect condicion" id="Condicion_3" disabled>
+                    <option value="Ninguna">Ninguna</option>
+                  </select>
+                </h3>
+                <h3 class="Menu_form--title">Condicion
+                  <select class="Menu_form--docselect condicion" id="Condicion_4" disabled>
+                    <option value="Ninguna">Ninguna</option>
+                  </select>
+                </h3>
+                <h3 class="Menu_form--title">Condicion
+                  <select class="Menu_form--docselect condicion" id="Condicion_5" disabled>
+                    <option value="Ninguna">Ninguna</option>
+                  </select>
+                </h3>
+              </article>
+            </section>
+            <article class="Menu_option">
+              <button class="btn Menu_register" id="update" style="padding: 20px; margin: 10px;">Guardar</button>
+              <button class="btn Menu_recover" id="modificar" style="padding: 20px; margin: 10px;">Modificar</button>
+            </article>
+        </form>
+        <script type="module" src="user_a.js"></script>
+    </main>
+</body>
+</html>
