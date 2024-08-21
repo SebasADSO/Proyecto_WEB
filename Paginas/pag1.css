@@ -53,6 +53,9 @@
     .file {
         width: 210px;
     }
+    .Menu_container {
+      overflow-x: scroll;
+    }
 }
 .rol_container {
     display: flex;
@@ -60,7 +63,8 @@
     gap: 15px;
 }
 tr {
-    background-color: aquamarine;
+    background-color: #4CAF50;
+    color: #fff;
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #000;
@@ -72,9 +76,24 @@ tbody {
     margin-bottom: 10px;
 }
 td {
-    border: 1px solid #000;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #000;
 }
-
+thead > tr {
+  background-color: #3e8e41;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #000;
+}
+.edit {
+    padding: var(--padding);
+    color: var(--bg--text--color--white);
+    border: none;
+    border-radius: 8px;
+    background-color: var(--bg--buttom--color);
+}
 
 
 /* Estilos para el modal */
@@ -142,3 +161,4 @@ td {
   .modal.hide {
     display: none;
   }
+
